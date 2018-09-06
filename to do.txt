@@ -1,0 +1,20 @@
+UI
+- Start knop
+  - Tutorial level
+  - Normal level
+- sluit knop
+- opties
+  - geluid
+  - ?
+- titel van het spel
+
+- Geld teller
+- ronde teller
+- zetten per ronde teller
+- 
+
+Game - tutorial
+- Level wereld iets
+- koning dialoog + volgende knop
+- 
+- 
