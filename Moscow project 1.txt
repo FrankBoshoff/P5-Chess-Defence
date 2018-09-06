@@ -1,0 +1,56 @@
+Must have:
+- Tafel
+- Schaakstukken
+- Omgeving:
+	- Kaarten, damstukken
+- Movement gridbased
+- Pathfinding
+- Damage & Health
+- Spawn & end points
+- 5 toren varianten:
+	- Pawn
+	- Knight
+	- Bishop
+	- Tower
+	- Queen
+- 3 enemy varianten
+	- Pawn
+	- Knight
+	- Tower
+- Enemy behavior:
+	- alle x aantal waves zijn altijd consistent
+- Tutorial level
+- Gewoon level
+- Economy:
+	- schaakstuk punt based
+	- PLAYTEST!
+- HP / Damage balance PLAYTEST!
+- Balance:
+	- player towers hebben een voordeel over enemies, PLAYTEST!
+- Feedback:
+	- gold pop up on earn
+	- audio on enemy death
+	- audio on king death
+	- audio on wave end
+	- audio on wave start
+
+Should have:
+- Second defender spawn location unlock (keeps)
+
+Could have:
+- Variant skins:
+	- stukken en bord
+- Pawn promotion
+- Super hard level, only one solution
+- Start game, kies kleur
+- Kappotte enemies
+- Wave timer met klok
+- Power up
+	- Table kick / punch
+
+Would have:
+- VR capability
+- Achievements
+	- Kamikaze achievement
+- Easter egg
+	- Koning dialoog doos

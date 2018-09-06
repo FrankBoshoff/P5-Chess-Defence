@@ -1,0 +1,28 @@
+Tower defense must have: (3D assets)
+
+- 5 Towers
+- 3 Visueel verschillende enemies
+- 2 levels
+- Style guide
+- PBR shading
+- UI (past bij rest van game)
+- Audiovisuele feedback
+
+Planning:
+week 1
+concept (GDD)
+
+week 2
+presenteren (10-15 min)
+
+week 2 - 5
+1e prototype
+
+week 6
+presenteren
+
+week 6 - 9
+product afmaken
+
+week 10
+product presenteren
