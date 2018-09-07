@@ -6,6 +6,7 @@ public class Unit : MonoBehaviour {
 
     public int health;
     public int damage;
+    public Object manager;
 
     // Use this for initialization
     void Start () {
