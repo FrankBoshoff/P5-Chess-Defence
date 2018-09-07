@@ -6,9 +6,10 @@ public class Unit : MonoBehaviour {
 
     public int health;
     public int damage;
+    public bool turn;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         SetValues();
 	}
 	
@@ -36,5 +37,10 @@ public class Unit : MonoBehaviour {
     public virtual void DoDamage ()
     {
         //damage code here
+    }
+
+    public virtual void OnDeath ()
+    {
+        //death code
     }
 }

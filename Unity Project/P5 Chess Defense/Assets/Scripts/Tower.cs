@@ -13,4 +13,15 @@ public class Tower : Unit {
 	void Update () {
 		
 	}
+
+    public override void SetValues ()
+    {
+        damage = 1;
+        health = 10;
+    }
+
+    public void SetTurn ()
+    {
+        turn = true;
+    }
 }
