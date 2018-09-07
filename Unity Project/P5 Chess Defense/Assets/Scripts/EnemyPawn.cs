@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class EnemyPawn : Enemy
 {
+    Vector3 pawnMoveForward;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start()
     {
-		
+        pawnMoveForward.x += -1;
 	}
 	
 	// Update is called once per frame
@@ -19,6 +20,11 @@ public class EnemyPawn : Enemy
 
     public override void Move()
     {
-        
+        if (manager.  == false)
+        {
+            transform.Translate(pawnMoveForward * Time.deltaTime);
+            //moet nog verzinnen om allemaal te checken
+            manager.turn = true;
+        }
     }
 }
