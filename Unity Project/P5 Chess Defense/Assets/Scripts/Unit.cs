@@ -6,7 +6,6 @@ public class Unit : MonoBehaviour {
 
     public int health;
     public int damage;
-    public bool turn;
 
     // Use this for initialization
     void Start () {
@@ -43,4 +42,5 @@ public class Unit : MonoBehaviour {
     {
         //death code
     }
+
 }

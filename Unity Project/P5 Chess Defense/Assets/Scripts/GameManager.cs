@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tower : Unit {
+public class GameManager : MonoBehaviour {
+
+    public bool turn;
 
 	// Use this for initialization
 	void Start () {
@@ -14,10 +16,8 @@ public class Tower : Unit {
 		
 	}
 
-    public override void SetValues ()
+    public void ChangeTurn ()
     {
-        damage = 1;
-        health = 10;
+        turn = !turn;
     }
-
 }
