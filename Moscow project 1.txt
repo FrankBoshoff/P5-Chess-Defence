@@ -1,28 +1,26 @@
 Must have:
-- Tafel
-- Schaakstukken
+- Boekenkast
 - Omgeving:
-	- Kaarten, damstukken
-- Movement gridbased
-- Pathfinding
+	- Bieb
+- Movement pathfinding (navmesh?)
 - Damage & Health
 - Spawn & end points
 - 5 toren varianten:
-	- Pawn
-	- Knight
-	- Bishop
-	- Tower
-	- Queen
+	- Magic Missile [Decent dps] (very simple design)
+	- Poison Darts [Low dps + poison]
+	- Frost Field [DoT + slow]
+	- Fireball [High damage, Area of Effect]
+	- Energy Wave [High damage, Area of Effect, time based] (fancy design)
 - 3 enemy varianten
-	- Pawn
-	- Knight
-	- Tower
+	- Kabouter
+	- Muisman
+	- Paddestoelmensen
 - Enemy behavior:
-	- alle x aantal waves zijn altijd consistent
+	- random waves
 - Tutorial level
-- Gewoon level
+- Gewoon level, na x waves optie voor endless
 - Economy:
-	- schaakstuk punt based
+	- mana based
 	- PLAYTEST!
 - HP / Damage balance PLAYTEST!
 - Balance:
@@ -30,27 +28,21 @@ Must have:
 - Feedback:
 	- gold pop up on earn
 	- audio on enemy death
-	- audio on king death
+	- audio on wizard death
 	- audio on wave end
 	- audio on wave start
+	- illuminate tower spawn locations
 
 Should have:
-- Second defender spawn location unlock (keeps)
+---
 
 Could have:
-- Variant skins:
-	- stukken en bord
-- Pawn promotion
-- Super hard level, only one solution
-- Start game, kies kleur
-- Kappotte enemies
-- Wave timer met klok
+- Wave timer / counter
 - Power up
-	- Table kick / punch
+	- Potions ?
 
 Would have:
 - VR capability
 - Achievements
-	- Kamikaze achievement
 - Easter egg
 	- Koning dialoog doos
