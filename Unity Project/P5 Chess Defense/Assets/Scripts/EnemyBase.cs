@@ -7,9 +7,13 @@ public class EnemyBase : MonoBehaviour
 {
     Transform navemeshTarget;
     NavMeshAgent enemyModel;
-
     public int enmyMoveSpeed;
+
     public int enemyHeath;
+    public int enemyDamage;
+
+    public bool isPoisoned;
+    public int poisonDamage;
 
     void Start()
     {
@@ -19,13 +23,30 @@ public class EnemyBase : MonoBehaviour
 
     void Update()
     {
-        
+        if (isPoisoned == true)
+        {
+            IsPoisoned();
+        }
     }
 
-    public virtual void EnemyMove()
+    public void EnemyMove()
     {
         enemyModel = this.GetComponent<NavMeshAgent>();
         enemyModel.destination = navemeshTarget.position;
-
     }
+
+    public void IsPoisoned()
+    {
+        //enemyHeath -= poisonDamage //overtime
+    }
+    
+    public virtual void EnemyDeath()
+    {
+        if (enemyHeath <= 0)
+        {
+            //particals and sound
+            Destroy(gameObject);
+        }
+    }
+
 }
