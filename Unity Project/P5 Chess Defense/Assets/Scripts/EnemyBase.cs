@@ -12,8 +12,12 @@ public class EnemyBase : MonoBehaviour
     public int enemyHeath;
     public int enemyDamage;
 
+    //all of following variables recieved through poison dart
     public bool isPoisoned;
     public int poisonDamage;
+    public float timeOfPoison;
+    float poisonTimer;
+    public int poisonTicks;
 
     void Start()
     {
@@ -25,6 +29,7 @@ public class EnemyBase : MonoBehaviour
     {
         if (isPoisoned == true)
         {
+            poisonTimer += Time.deltaTime;
             IsPoisoned();
         }
     }
@@ -35,9 +40,31 @@ public class EnemyBase : MonoBehaviour
         enemyModel.destination = navemeshTarget.position;
     }
 
+    void OnCollisionEnter(Collision colwizard)
+    {
+        if (colwizard.gameObject.tag == ("Wizard"))
+        {
+            Debug.Log("endpoint");
+
+            colwizard.gameObject.GetComponent<WizardScript>().wizardHealth -= enemyDamage;
+            Destroy(gameObject);
+        }
+    }
+
     public void IsPoisoned()
     {
-        //enemyHeath -= poisonDamage //overtime
+        if (poisonTimer >= timeOfPoison)
+        {
+            //add particals
+            enemyHeath -= poisonDamage;
+            poisonTimer = 0;
+            poisonTicks -= 1;
+            EnemyDeath();
+            if (poisonTicks <= 0)
+            {
+                isPoisoned = false;
+            }
+        }
     }
     
     public virtual void EnemyDeath()

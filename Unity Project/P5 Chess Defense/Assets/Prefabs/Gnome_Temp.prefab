@@ -110,7 +110,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enmyMoveSpeed: 2
-  enemyHeath: 0
+  enemyHeath: 5
+  enemyDamage: 2
+  isPoisoned: 0
+  poisonDamage: 1
+  timeOfPoison: 2
+  poisonTicks: 2
 --- !u!195 &195773202053051210
 NavMeshAgent:
   m_ObjectHideFlags: 1

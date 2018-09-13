@@ -156,6 +156,11 @@ Prefab:
       propertyPath: m_Name
       value: Gnome_Temp (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114708101330956814, guid: 6dcb9afcf570821408c8ec4e074d8b84,
+        type: 2}
+      propertyPath: timeOfPoison
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dcb9afcf570821408c8ec4e074d8b84, type: 2}
   m_IsPrefabAsset: 0
@@ -264,6 +269,11 @@ Prefab:
     - target: {fileID: 1556204239281172, guid: 6dcb9afcf570821408c8ec4e074d8b84, type: 2}
       propertyPath: m_Name
       value: Gnome_Temp (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114708101330956814, guid: 6dcb9afcf570821408c8ec4e074d8b84,
+        type: 2}
+      propertyPath: timeOfPoison
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dcb9afcf570821408c8ec4e074d8b84, type: 2}
@@ -1991,6 +2001,8 @@ GameObject:
   - component: {fileID: 852605313}
   - component: {fileID: 852605312}
   - component: {fileID: 852605311}
+  - component: {fileID: 852605315}
+  - component: {fileID: 852605316}
   m_Layer: 0
   m_Name: Wizard_Temp
   m_TagString: Wizard
@@ -2059,12 +2071,39 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 852605310}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13, y: 1, z: -14}
+  m_LocalPosition: {x: -13, y: 0.5, z: -14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &852605315
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 852605310}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 122
+  m_CollisionDetection: 0
+--- !u!114 &852605316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 852605310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db427d5ed70f4ea40a43c999a229b011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wizardHealth: 10
 --- !u!1001 &857540932
 Prefab:
   m_ObjectHideFlags: 0
@@ -2935,6 +2974,21 @@ Prefab:
     - target: {fileID: 4035975827481676, guid: 6dcb9afcf570821408c8ec4e074d8b84, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114708101330956814, guid: 6dcb9afcf570821408c8ec4e074d8b84,
+        type: 2}
+      propertyPath: enemyHeath
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114708101330956814, guid: 6dcb9afcf570821408c8ec4e074d8b84,
+        type: 2}
+      propertyPath: poisonDamage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114708101330956814, guid: 6dcb9afcf570821408c8ec4e074d8b84,
+        type: 2}
+      propertyPath: timeOfPoison
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dcb9afcf570821408c8ec4e074d8b84, type: 2}
