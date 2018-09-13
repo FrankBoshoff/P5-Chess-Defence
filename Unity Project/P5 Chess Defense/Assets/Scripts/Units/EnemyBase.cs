@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyBase : MonoBehaviour
+public class EnemyBase : Units
 {
     Transform navemeshTarget;
     NavMeshAgent enemyModel;
     public int enmyMoveSpeed;
 
-    public int enemyHeath;
     public int enemyDamage;
-
     //all of following variables recieved through poison dart
     public bool isPoisoned;
     public int poisonDamage;
@@ -40,26 +38,27 @@ public class EnemyBase : MonoBehaviour
         enemyModel.destination = navemeshTarget.position;
     }
 
-    void OnCollisionEnter(Collision colwizard)
+    void OnCollisionEnter(Collision target)
     {
-        if (colwizard.gameObject.tag == ("Wizard"))
+        if (target.gameObject.tag == ("Wizard"))
         {
             Debug.Log("endpoint");
-
-            colwizard.gameObject.GetComponent<WizardScript>().wizardHealth -= enemyDamage;
+            target.gameObject.GetComponent<WizardScript>().health -= enemyDamage;
             Destroy(gameObject);
+            //apart gameover of met deathfunction
+            target.gameObject.GetComponent<WizardScript>().GameOver();
         }
     }
 
-    public void IsPoisoned()
+    public virtual void IsPoisoned()
     {
         if (poisonTimer >= timeOfPoison)
         {
             //add particals
-            enemyHeath -= poisonDamage;
+            health -= poisonDamage;
             poisonTimer = 0;
             poisonTicks -= 1;
-            EnemyDeath();
+            Death();
             if (poisonTicks <= 0)
             {
                 isPoisoned = false;
@@ -67,9 +66,9 @@ public class EnemyBase : MonoBehaviour
         }
     }
     
-    public virtual void EnemyDeath()
+    public virtual void Death()
     {
-        if (enemyHeath <= 0)
+        if (health <= 0)
         {
             //particals and sound
             Destroy(gameObject);

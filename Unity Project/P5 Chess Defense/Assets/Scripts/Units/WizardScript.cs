@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WizardScript : MonoBehaviour
+public class WizardScript : Units
 {
     public int wizardHealth;
     public Vector3 wizardPos;
@@ -10,5 +10,13 @@ public class WizardScript : MonoBehaviour
     void OnCollisionExit(Collision collision)
     {
         this.gameObject.transform.position = wizardPos;
+    }
+
+    public void GameOver()
+    {
+        if (health <= 0)
+        {
+            Debug.Log("GameOver");
+        }
     }
 }
