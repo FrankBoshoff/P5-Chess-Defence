@@ -5,6 +5,7 @@ using UnityEngine;
 public class MoveForward : MonoBehaviour {
 
     public Vector3 v;
+    public int enemyHealth;
 
 	// Use this for initialization
 	void Start () {
