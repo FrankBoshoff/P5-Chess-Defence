@@ -17,6 +17,16 @@ public class Shot : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        transform.LookAt(target);
+        transform.Translate(transform.forward * speed * Time.deltaTime);
 	}
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "enemy")
+        {
+            collision.gameObject.GetComponent<Units>().TakeDamage(damage);
+            Destroy(gameObject);
+        }
+    }
 }
