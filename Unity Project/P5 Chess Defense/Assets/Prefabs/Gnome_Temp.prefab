@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23273040143596158}
   - component: {fileID: 65511241943337010}
   - component: {fileID: 195773202053051210}
-  - component: {fileID: 114708101330956814}
+  - component: {fileID: 114553070934222402}
   - component: {fileID: 54394304480391032}
   m_Layer: 0
   m_Name: Gnome_Temp
@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1556204239281172}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12, y: 0.5, z: 10}
+  m_LocalPosition: {x: 9, y: 0.5, z: 15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -114,7 +114,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114708101330956814
+--- !u!114 &114553070934222402
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,15 +122,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1556204239281172}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a87ceb0f314568c4992445e83c04fbb1, type: 3}
+  m_Script: {fileID: 11500000, guid: 00ed48df1b299c24583fbc9da45d886a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 5
   enmyMoveSpeed: 2
-  enemyHeath: 5
-  enemyDamage: 2
+  enemyDamage: 5
   isPoisoned: 0
-  poisonDamage: 1
-  timeOfPoison: 2
+  poisonDamage: 2
+  timeOfPoison: 1
   poisonTicks: 2
 --- !u!195 &195773202053051210
 NavMeshAgent:

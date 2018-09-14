@@ -4,19 +4,10 @@ using UnityEngine;
 
 public class WizardScript : Units
 {
-    public int wizardHealth;
-    public Vector3 wizardPos;
-
-    void OnCollisionExit(Collision collision)
+    public override void Death()
     {
-        this.gameObject.transform.position = wizardPos;
-    }
-
-    public void GameOver()
-    {
-        if (health <= 0)
-        {
-            Debug.Log("GameOver");
-        }
+        //change particals and sound
+        Debug.Log("Game Over");
+        base.Death();
     }
 }

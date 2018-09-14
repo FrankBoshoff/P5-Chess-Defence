@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyGnome : EnemyBase
+public class Gnome : EnemyBase
 {
-    
+
+
 }

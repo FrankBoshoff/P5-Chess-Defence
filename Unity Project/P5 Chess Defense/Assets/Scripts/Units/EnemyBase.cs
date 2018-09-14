@@ -44,9 +44,8 @@ public class EnemyBase : Units
         {
             Debug.Log("endpoint");
             target.gameObject.GetComponent<WizardScript>().health -= enemyDamage;
+            target.gameObject.GetComponent<WizardScript>().Death();
             Destroy(gameObject);
-            //apart gameover of met deathfunction
-            target.gameObject.GetComponent<WizardScript>().GameOver();
         }
     }
 
@@ -65,14 +64,10 @@ public class EnemyBase : Units
             }
         }
     }
-    
-    public virtual void Death()
+    public override void Death()
     {
-        if (health <= 0)
-        {
-            //particals and sound
-            Destroy(gameObject);
-        }
+        //change particals and sound
+        base.Death();
     }
 
 }
