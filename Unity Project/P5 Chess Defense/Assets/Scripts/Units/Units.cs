@@ -8,10 +8,16 @@ public class Units : MonoBehaviour
 
     public virtual void Death()
     {
-        if (health <= 0)
+        Destroy(gameObject);
+    }
+
+    public virtual void TakeDamage(int dmg)
+    {
+        health -= dmg;
+        if(health <= 0)
         {
-            //play particals and sound
-            Destroy(gameObject);
+            Death();
         }
     }
+
 }

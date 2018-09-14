@@ -44,8 +44,7 @@ public class EnemyBase : Units
         if (target.gameObject.tag == ("Wizard"))
         {
             Debug.Log("endpoint");
-            target.gameObject.GetComponent<WizardScript>().health -= enemyDamage;
-            target.gameObject.GetComponent<WizardScript>().Death();
+            target.gameObject.GetComponent<WizardScript>().TakeDamage(enemyDamage);
             Destroy(gameObject);
         }
     }

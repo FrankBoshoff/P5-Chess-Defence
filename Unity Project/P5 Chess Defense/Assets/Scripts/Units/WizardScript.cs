@@ -6,8 +6,8 @@ public class WizardScript : Units
 {
     public override void Death()
     {
-        //change particals and sound
-        Debug.Log("Game Over");
+        //add/change particals and sound
+        print("Game Over");
         base.Death();
     }
 }
