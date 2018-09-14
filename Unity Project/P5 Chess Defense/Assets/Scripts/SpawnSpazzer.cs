@@ -8,7 +8,6 @@ public class SpawnSpazzer : MonoBehaviour {
     public float var;
     public Transform t;
     public bool spaz;
-    public Shot s;
     public Shot shot;
 
 	// Use this for initialization
@@ -26,10 +25,13 @@ public class SpawnSpazzer : MonoBehaviour {
         }
     }
 
-    public void Shoot(Transform target, int damage)
+    public void Shoot(Shot s, Transform target, int damage, int speed, bool explosion, bool poison)
     {
         shot = Instantiate(s, transform.position, Quaternion.identity);
         shot.damage = damage;
+        shot.speed = speed;
         shot.target = target;
+        shot.explosive = explosion;
+        shot.poisonous = poison;
     }
 }

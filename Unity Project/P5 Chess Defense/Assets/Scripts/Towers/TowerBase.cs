@@ -7,6 +7,7 @@ public class TowerBase : MonoBehaviour {
     public int cost;
     public int range;
     public float timer;
+    public float timerReset;
     public List<Transform> targets = new List<Transform>();
 
 	// Use this for initialization
@@ -25,6 +26,7 @@ public class TowerBase : MonoBehaviour {
         if(targets[0] != null && timer <= 0)
         {
             Ability();
+            timer = timerReset;
         }
 	}
 
