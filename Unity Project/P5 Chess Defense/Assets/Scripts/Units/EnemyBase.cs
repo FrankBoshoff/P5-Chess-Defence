@@ -7,7 +7,7 @@ public class EnemyBase : Units
 {
     Transform navemeshTarget;
     NavMeshAgent enemyModel;
-    public int enmyMoveSpeed;
+    public int enemyMoveSpeed;
 
     public int enemyDamage;
     //all of following variables recieved through poison dart
@@ -20,6 +20,7 @@ public class EnemyBase : Units
     void Start()
     {
         navemeshTarget = GameObject.FindWithTag("Wizard").transform;
+        this.GetComponent<NavMeshAgent>().speed = enemyMoveSpeed;
         EnemyMove();
     }
 
