@@ -16,8 +16,16 @@ public class TowerBase : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
-		
+	public virtual void Update () {
+        timer -= Time.deltaTime;
+        if(timer < 0)
+        {
+            timer = 0;
+        }
+        if(targets[0] != null && timer <= 0)
+        {
+            Ability();
+        }
 	}
 
     public virtual void Ability()
