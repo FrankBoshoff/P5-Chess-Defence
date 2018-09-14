@@ -34,7 +34,7 @@ public class Tower : MonoBehaviour {
     public virtual void Fire()
     {
         print("damage");
-        spawner.GetComponent<SpawnSpazzer>().Shoot(target, damage, spawner.GetComponent<SpawnSpazzer>().spaz);
+        spawner.GetComponent<SpawnSpazzer>().Shoot(target, damage);
         fireTimer = fireTimerReset;
     }
 
