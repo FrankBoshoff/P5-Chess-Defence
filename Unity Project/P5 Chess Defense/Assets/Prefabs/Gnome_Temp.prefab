@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 54394304480391032}
   m_Layer: 0
   m_Name: Gnome_Temp
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1556204239281172}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9, y: 0.5, z: 15}
+  m_LocalPosition: {x: 10, y: 0.5, z: 15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -126,12 +126,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
-  enemyMoveSpeed: 2
+  enemyMoveSpeed: 3
   enemyDamage: 3
   isPoisoned: 0
   poisonDamage: 2
   timeOfPoison: 1
   poisonTicks: 2
+  towers: []
 --- !u!195 &195773202053051210
 NavMeshAgent:
   m_ObjectHideFlags: 1

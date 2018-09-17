@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 54438774526245992}
   m_Layer: 0
   m_Name: MouseMan_Temp
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,6 +120,7 @@ MonoBehaviour:
   poisonDamage: 2
   timeOfPoison: 1
   poisonTicks: 2
+  towers: []
 --- !u!135 &135274688317026120
 SphereCollider:
   m_ObjectHideFlags: 1
