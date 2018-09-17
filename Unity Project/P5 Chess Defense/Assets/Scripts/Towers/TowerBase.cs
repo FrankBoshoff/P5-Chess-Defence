@@ -39,11 +39,14 @@ public class TowerBase : MonoBehaviour {
     {
         //add enemy to target list
         targets.Add(collision.transform);
+        collision.GetComponent<EnemyBase>().towers.Add(gameObject);
+        print("check");
     }
 
     private void OnTriggerExit(Collider collision)
     {
         //remove enemy from target list
         targets.Remove(collision.transform);
+        collision.GetComponent<EnemyBase>().towers.Remove(gameObject);
     }
 }

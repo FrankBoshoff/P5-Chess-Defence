@@ -16,6 +16,7 @@ public class EnemyBase : Units
     public float timeOfPoison;
     float poisonTimer;
     public int poisonTicks;
+    public List<GameObject> towers = new List<GameObject>();
 
     void Start()
     {
@@ -67,6 +68,10 @@ public class EnemyBase : Units
     public override void Death()
     {
         //change particals and sound
+        foreach(GameObject g in towers)
+        {
+            g.GetComponent<TowerBase>().targets.Remove(gameObject.transform);
+        }
         base.Death();
     }
 

@@ -9,6 +9,7 @@ public class Shot : MonoBehaviour {
     public bool poisonous;
     public bool explosive;
     public Transform target;
+    public float lifeTimer;
 
     // Use this for initialization
     void Start () {
@@ -19,14 +20,30 @@ public class Shot : MonoBehaviour {
 	void Update () {
         transform.LookAt(target);
         transform.Translate(transform.forward * speed * Time.deltaTime);
+        lifeTimer -= Time.deltaTime;
+        if(lifeTimer <= 0)
+        {
+            Destroy(gameObject);
+        }
 	}
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "enemy")
+        if(collision.gameObject.tag == "Enemy")
         {
-            collision.gameObject.GetComponent<Units>().TakeDamage(damage);
-            Destroy(gameObject);
+            if(poisonous == true)
+            {
+                collision.gameObject.GetComponent<EnemyBase>().isPoisoned = poisonous;
+            }
+            if(explosive == true)
+            {
+                //spawn explosion
+            }
+            else
+            {
+                collision.gameObject.GetComponent<Units>().TakeDamage(damage);
+            }
         }
+        Destroy(gameObject);
     }
 }
