@@ -10,11 +10,13 @@ public class Shot : MonoBehaviour {
     public bool explosive;
     public Transform target;
     public float lifeTimer;
+    public Blast blast;
+    public Blast b;
 
     // Use this for initialization
     void Start () {
-		
-	}
+        transform.LookAt(target);
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -38,6 +40,8 @@ public class Shot : MonoBehaviour {
             if(explosive == true)
             {
                 //spawn explosion
+                b = Instantiate(blast, transform.position, Quaternion.identity);
+                b.damage = damage;
             }
             else
             {
