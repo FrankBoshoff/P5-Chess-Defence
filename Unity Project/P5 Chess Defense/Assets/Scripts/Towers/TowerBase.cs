@@ -39,7 +39,7 @@ public class TowerBase : MonoBehaviour {
     private void OnTriggerEnter(Collider collision)
     {
         //add enemy to target list
-        targets.Add(collision.transform);
+        AddTarget(collision.transform);
         collision.GetComponent<EnemyBase>().towers.Add(gameObject);
         print("check");
     }
@@ -54,5 +54,10 @@ public class TowerBase : MonoBehaviour {
     public virtual void RemoveTarget(Transform t)
     {
         targets.Remove(t);
+    }
+
+    public virtual void AddTarget(Transform t)
+    {
+        targets.Add(t);
     }
 }

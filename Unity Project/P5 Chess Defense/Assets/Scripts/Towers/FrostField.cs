@@ -16,7 +16,6 @@ public class FrostField : Aura {
         foreach (Transform t in targets)
         {
             t.gameObject.GetComponent<EnemyBase>().TakeDamage(damage);
-            t.gameObject.GetComponent<EnemyBase>().enemyMoveSpeed /= slow;
         }
     }
 
@@ -24,5 +23,11 @@ public class FrostField : Aura {
     {
         t.gameObject.GetComponent<EnemyBase>().enemyMoveSpeed *= slow;
         base.RemoveTarget(t);
+    }
+
+    public override void AddTarget(Transform t)
+    {
+        t.gameObject.GetComponent<EnemyBase>().enemyMoveSpeed /= slow;
+        base.AddTarget(t);
     }
 }
