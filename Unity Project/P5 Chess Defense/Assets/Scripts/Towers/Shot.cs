@@ -37,6 +37,7 @@ public class Shot : MonoBehaviour {
             {
                 collision.gameObject.GetComponent<EnemyBase>().isPoisoned = poisonous;
             }
+
             if(explosive == true)
             {
                 //spawn explosion

@@ -46,7 +46,12 @@ public class TowerBase : MonoBehaviour {
     private void OnTriggerExit(Collider collision)
     {
         //remove enemy from target list
-        targets.Remove(collision.transform);
+        RemoveTarget(collision.transform);
         collision.GetComponent<EnemyBase>().towers.Remove(gameObject);
+    }
+
+    public void RemoveTarget(Transform t)
+    {
+        targets.Remove(t);
     }
 }
