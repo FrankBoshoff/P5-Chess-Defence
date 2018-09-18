@@ -6,7 +6,6 @@ public class Projectile : TowerBase {
 
     public Shot shot;
     public GameObject spawner;
-    public int damage;
     public int shotSpeed;
 
 	// Use this for initialization

@@ -5,6 +5,7 @@ using UnityEngine;
 public class TowerBase : MonoBehaviour {
 
     public int cost;
+    public int damage;
     public int range;
     public float timer;
     public float timerReset;
@@ -50,7 +51,7 @@ public class TowerBase : MonoBehaviour {
         collision.GetComponent<EnemyBase>().towers.Remove(gameObject);
     }
 
-    public void RemoveTarget(Transform t)
+    public virtual void RemoveTarget(Transform t)
     {
         targets.Remove(t);
     }
