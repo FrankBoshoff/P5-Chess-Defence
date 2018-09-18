@@ -29,7 +29,7 @@ public class Blast : MonoBehaviour {
     {
         if(other.gameObject.tag == "Enemy")
         {
-            other.GetComponent<EnemyBase>().health -= damage;
+            other.GetComponent<EnemyBase>().TakeDamage(damage);
         }
     }
 }
