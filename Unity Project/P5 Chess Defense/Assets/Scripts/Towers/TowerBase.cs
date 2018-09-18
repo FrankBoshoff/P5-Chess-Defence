@@ -5,6 +5,7 @@ using UnityEngine;
 public class TowerBase : MonoBehaviour {
 
     public int cost;
+    public int damage;
     public int range;
     public float timer;
     public float timerReset;
@@ -38,7 +39,7 @@ public class TowerBase : MonoBehaviour {
     private void OnTriggerEnter(Collider collision)
     {
         //add enemy to target list
-        targets.Add(collision.transform);
+        AddTarget(collision.transform);
         collision.GetComponent<EnemyBase>().towers.Add(gameObject);
         print("check");
     }
@@ -46,7 +47,17 @@ public class TowerBase : MonoBehaviour {
     private void OnTriggerExit(Collider collision)
     {
         //remove enemy from target list
-        targets.Remove(collision.transform);
+        RemoveTarget(collision.transform);
         collision.GetComponent<EnemyBase>().towers.Remove(gameObject);
+    }
+
+    public virtual void RemoveTarget(Transform t)
+    {
+        targets.Remove(t);
+    }
+
+    public virtual void AddTarget(Transform t)
+    {
+        targets.Add(t);
     }
 }

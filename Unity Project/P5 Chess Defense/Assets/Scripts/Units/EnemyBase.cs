@@ -70,7 +70,7 @@ public class EnemyBase : Units
         //change particals and sound
         foreach(GameObject g in towers)
         {
-            g.GetComponent<TowerBase>().targets.Remove(gameObject.transform);
+            g.GetComponent<TowerBase>().RemoveTarget(gameObject.transform);
         }
         base.Death();
     }
