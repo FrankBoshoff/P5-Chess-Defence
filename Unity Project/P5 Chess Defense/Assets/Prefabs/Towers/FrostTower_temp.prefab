@@ -9,17 +9,17 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1729509880636030}
+  m_RootGameObject: {fileID: 1498387906990992}
   m_IsPrefabAsset: 1
---- !u!1 &1069206211287314
+--- !u!1 &1437432505090010
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4564055445879758}
-  - component: {fileID: 114155240934008766}
+  - component: {fileID: 4033362735283046}
+  - component: {fileID: 114170062890077380}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -27,58 +27,58 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1729509880636030
+--- !u!1 &1498387906990992
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4694186234693120}
-  - component: {fileID: 33312131191949864}
-  - component: {fileID: 23851659507209804}
-  - component: {fileID: 135764244015985500}
-  - component: {fileID: 114539139153811778}
+  - component: {fileID: 4923733795203668}
+  - component: {fileID: 33301145453742834}
+  - component: {fileID: 23474446798138486}
+  - component: {fileID: 135298973120366914}
+  - component: {fileID: 114565494874164620}
   m_Layer: 0
-  m_Name: MagicMissleTower_temp
+  m_Name: FrostTower_temp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4564055445879758
+--- !u!4 &4033362735283046
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1069206211287314}
+  m_GameObject: {fileID: 1437432505090010}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4694186234693120}
+  m_Father: {fileID: 4923733795203668}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4694186234693120
+--- !u!4 &4923733795203668
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1729509880636030}
+  m_GameObject: {fileID: 1498387906990992}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.61, y: 1, z: 1.3}
+  m_LocalPosition: {x: 16.38, y: 1.66, z: 1.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4564055445879758}
+  - {fileID: 4033362735283046}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23851659507209804
+--- !u!23 &23474446798138486
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1729509880636030}
+  m_GameObject: {fileID: 1498387906990992}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -108,19 +108,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33312131191949864
+--- !u!33 &33301145453742834
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1729509880636030}
+  m_GameObject: {fileID: 1498387906990992}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114155240934008766
+--- !u!114 &114170062890077380
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1069206211287314}
+  m_GameObject: {fileID: 1437432505090010}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b8ff927db420634f8fc13690671b319, type: 3}
@@ -128,35 +128,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   v: {x: 0, y: 5, z: 0}
   var: 2
-  t: {fileID: 4694186234693120}
+  t: {fileID: 4923733795203668}
   spaz: 1
   shot: {fileID: 0}
---- !u!114 &114539139153811778
+--- !u!114 &114565494874164620
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1729509880636030}
+  m_GameObject: {fileID: 1498387906990992}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20143b8e58657314cbd7522a54e63a30, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f29c00e354ccf94e9dc017b109bbd89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 10
-  damage: 2
-  range: 7
+  cost: 7
+  damage: 1
+  range: 20
   timer: 0
   timerReset: 1
   targets: []
-  shot: {fileID: 114140109497021872, guid: e4fead8fda2aafa499dd373b1709518c, type: 2}
-  spawner: {fileID: 1069206211287314}
-  shotSpeed: 20
---- !u!135 &135764244015985500
+  slow: 2
+--- !u!135 &135298973120366914
 SphereCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1729509880636030}
+  m_GameObject: {fileID: 1498387906990992}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1

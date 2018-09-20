@@ -9,16 +9,32 @@ public class UIManager : MonoBehaviour {
     public int waveNumber;
     public Text waveText;
     public int cash;
+    public int startCash;
     public Text cashText;
     public GameObject pauseMenu;
     public Button continueButton;
     public Button exitButton;
 
-	// Use this for initialization
-	void Start () {
+    public GameObject shop;
+    public Button shopTower1;
+    public Button shopTower2;
+    public Button shopTower3;
+    public Button shopTower4;
+    public Button shopTower5;
+    public Button shopClose;
+
+    // Use this for initialization
+    void Start () {
         continueButton.onClick.AddListener(Continue);
         exitButton.onClick.AddListener(Exit);
-	}
+        shopTower1.onClick.AddListener(delegate { OrderTower(0); });
+        shopTower2.onClick.AddListener(delegate { OrderTower(1); });
+        shopTower3.onClick.AddListener(delegate { OrderTower(2); });
+        shopTower4.onClick.AddListener(delegate { OrderTower(3); });
+        shopTower5.onClick.AddListener(delegate { OrderTower(4); });
+        shopClose.onClick.AddListener(CloseShop);
+        UpdateEconomyUI(startCash);
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -51,5 +67,16 @@ public class UIManager : MonoBehaviour {
     {
         cash += change;
         cashText.GetComponent<Text>().text = "Cash: " + cash.ToString();
+    }
+
+    public void OrderTower(int i)
+    {
+        shop.GetComponent<TowerBuilder>().BuildTower(shop.transform, shop.GetComponent<TowerBuilder>().Towers[i]);
+    }
+
+    public void CloseShop()
+    {
+        print("SHOP SHUT");
+        shop.GetComponent<TowerBuilder>().CloseShop();
     }
 }

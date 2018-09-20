@@ -5,9 +5,12 @@ using UnityEngine;
 public class TowerBuilder : MonoBehaviour {
 
     public GameObject shop;
+    public GameObject manager;
 
-	// Use this for initialization
-	void Start () {
+    public List<GameObject> Towers = new List<GameObject>();
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -20,8 +23,32 @@ public class TowerBuilder : MonoBehaviour {
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            shop.transform.position = Input.mousePosition;
-            shop.SetActive(true);
+            if(shop.activeSelf == false)
+            {
+                manager.GetComponent<UIManager>().shop = gameObject;
+                shop.transform.position = Input.mousePosition;
+                shop.SetActive(true);
+            }
         }
+    }
+
+    public void BuildTower(Transform t, GameObject tower)
+    {
+        if(tower.GetComponent<TowerBase>().cost <= manager.GetComponent<UIManager>().cash)
+        {
+            manager.GetComponent<UIManager>().UpdateEconomyUI(-tower.GetComponent<TowerBase>().cost);
+            Instantiate(tower, t.position, Quaternion.identity);
+            CloseShop();
+        }
+        else
+        {
+            print("not enough cash");
+        }
+    }
+
+    public void CloseShop()
+    {
+        print("SHOP CLOSE");
+        shop.SetActive(false);
     }
 }
