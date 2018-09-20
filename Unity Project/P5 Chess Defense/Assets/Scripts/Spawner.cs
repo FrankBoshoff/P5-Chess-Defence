@@ -8,10 +8,13 @@ public class Spawner : MonoBehaviour
     public float spawntime;
     public bool maySpawn;
     GameObject rEnemy;
+    public GameObject manager;
+    GameObject e;
+    public GameObject ui;
 
     void Start()
     {
-        maySpawn = true;
+        //maySpawn = true;
     }
 
     void Update()
@@ -32,7 +35,11 @@ public class Spawner : MonoBehaviour
     public IEnumerator SpawnEnemy()
     {
         yield return new WaitForSeconds(spawntime);
-        Instantiate(rEnemy, transform.position, Quaternion.identity);
-        maySpawn = true;
+        e = Instantiate(rEnemy, transform.position, Quaternion.identity);
+        e.GetComponent<EnemyBase>().wave = manager;
+        e.GetComponent<EnemyBase>().ui = ui;
+        manager.GetComponent<WaveManager>().toSpawn -= 1;
+        manager.GetComponent<WaveManager>().toKill += 1;
+        manager.GetComponent<WaveManager>().NextSpawn();
     }
 }
