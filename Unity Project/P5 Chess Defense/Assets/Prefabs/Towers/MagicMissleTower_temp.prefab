@@ -148,9 +148,9 @@ MonoBehaviour:
   timer: 0
   timerReset: 1
   targets: []
-  shot: {fileID: 114756882240901226, guid: 0c53608c05a938e4fb19cdb0be47fdf3, type: 2}
+  shot: {fileID: 114140109497021872, guid: e4fead8fda2aafa499dd373b1709518c, type: 2}
   spawner: {fileID: 1069206211287314}
-  shotSpeed: 8
+  shotSpeed: 1
 --- !u!135 &135764244015985500
 SphereCollider:
   m_ObjectHideFlags: 1
