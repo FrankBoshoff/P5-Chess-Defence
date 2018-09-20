@@ -115,6 +115,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   enemyMoveSpeed: 5
+  wave: {fileID: 0}
+  ui: {fileID: 0}
+  minWorth: 3
+  maxWorth: 5
   enemyDamage: 1
   isPoisoned: 0
   poisonDamage: 2
