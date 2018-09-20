@@ -150,7 +150,7 @@ MonoBehaviour:
   targets: []
   shot: {fileID: 114140109497021872, guid: e4fead8fda2aafa499dd373b1709518c, type: 2}
   spawner: {fileID: 1069206211287314}
-  shotSpeed: 1
+  shotSpeed: 20
 --- !u!135 &135764244015985500
 SphereCollider:
   m_ObjectHideFlags: 1
