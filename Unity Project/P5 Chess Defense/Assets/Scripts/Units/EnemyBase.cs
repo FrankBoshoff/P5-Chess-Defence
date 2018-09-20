@@ -8,6 +8,10 @@ public class EnemyBase : Units
     Transform navemeshTarget;
     NavMeshAgent enemyModel;
     public int enemyMoveSpeed;
+    public GameObject wave;
+    public GameObject ui;
+    public int minWorth;
+    public int maxWorth;
 
     public int enemyDamage;
     //all of following variables recieved through poison dart
@@ -65,6 +69,7 @@ public class EnemyBase : Units
             }
         }
     }
+
     public override void Death()
     {
         //change particals and sound
@@ -72,7 +77,8 @@ public class EnemyBase : Units
         {
             g.GetComponent<TowerBase>().RemoveTarget(gameObject.transform);
         }
+        wave.GetComponent<WaveManager>().toKill -= 1;
+        ui.GetComponent<UIManager>().UpdateEconomyUI(Random.Range(minWorth, maxWorth));
         base.Death();
     }
-
 }

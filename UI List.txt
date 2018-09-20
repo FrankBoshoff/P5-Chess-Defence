@@ -1,0 +1,12 @@
+Always on screen:
+- Wave counter
+- Cash counter
+
+Pause Menu:
+- Continue button
+- Exit button (goes to main menu)
+
+Main Menu:
+- Start button
+- Options button
+- Exit button
