@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
@@ -24,15 +25,18 @@ public class MainMenu : MonoBehaviour {
     public void StartGame()
     {
         print("start game");
+        SceneManager.LoadScene("Jorrit(Kopie)");
     }
 
     public void Options()
     {
         print("options");
+        SceneManager.LoadScene("Options");
     }
 
     public void ExitGame()
     {
         print("exit");
+        Application.Quit();
     }
 }

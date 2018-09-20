@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 7ee11ea31a7f6974a814858bc52daf3c
+  - enabled: 1
+    path: Assets/Scenes/Jorrit(Kopie).unity
+    guid: 51188cc38581b274a974b223a0715429
+  - enabled: 1
+    path: Assets/Scenes/Options.unity
+    guid: 5eee0a11cc2633546a6274272c9267e0
   m_configObjects: {}

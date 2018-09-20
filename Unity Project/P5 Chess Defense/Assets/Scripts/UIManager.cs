@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour {
 
@@ -11,10 +12,12 @@ public class UIManager : MonoBehaviour {
     public Text cashText;
     public GameObject pauseMenu;
     public Button continueButton;
+    public Button exitButton;
 
 	// Use this for initialization
 	void Start () {
         continueButton.onClick.AddListener(Continue);
+        exitButton.onClick.AddListener(Exit);
 	}
 	
 	// Update is called once per frame
@@ -31,6 +34,11 @@ public class UIManager : MonoBehaviour {
     {
         Time.timeScale = 1;
         pauseMenu.SetActive(false);
+    }
+
+    public void Exit()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void UpdateWaveUI()
