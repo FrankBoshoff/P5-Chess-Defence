@@ -57,3 +57,5 @@ MonoBehaviour:
   - {fileID: 1146168008921298, guid: e81a3234a296c3e4a88458011340a648, type: 2}
   spawntime: 1
   maySpawn: 0
+  manager: {fileID: 0}
+  ui: {fileID: 0}
