@@ -25,7 +25,7 @@ public class SpawnSpazzer : MonoBehaviour {
         }
     }
 
-    public void Shoot(Shot s, Transform target, int damage, int speed, bool explosion, bool poison)
+    public void Shoot(Shot s, Transform target, int damage, int speed, bool explosion, bool poison, int ticks)
     {
         shot = Instantiate(s, transform.position, Quaternion.identity);
         shot.damage = damage;
@@ -33,5 +33,6 @@ public class SpawnSpazzer : MonoBehaviour {
         shot.target = target;
         shot.explosive = explosion;
         shot.poisonous = poison;
+        shot.ticks = ticks;
     }
 }

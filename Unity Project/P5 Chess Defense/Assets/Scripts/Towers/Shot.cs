@@ -12,6 +12,7 @@ public class Shot : MonoBehaviour {
     public float lifeTimer;
     public Blast blast;
     public Blast b;
+    public int ticks;
 
     // Use this for initialization
     void Start () {
@@ -36,6 +37,7 @@ public class Shot : MonoBehaviour {
             if(poisonous == true)
             {
                 collision.gameObject.GetComponent<EnemyBase>().isPoisoned = poisonous;
+                collision.gameObject.GetComponent<EnemyBase>().poisonTicks = ticks;
             }
 
             if(explosive == true)

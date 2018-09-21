@@ -11,6 +11,6 @@ public class Fireball : Projectile {
 
     public override void Ability()
     {
-        spawner.GetComponent<SpawnSpazzer>().Shoot(shot, targets[0], damage, shotSpeed, true, false);
+        spawner.GetComponent<SpawnSpazzer>().Shoot(shot, targets[0], damage, shotSpeed, true, false, 0);
     }
 }

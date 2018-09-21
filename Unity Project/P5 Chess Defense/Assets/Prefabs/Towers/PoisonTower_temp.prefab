@@ -66,7 +66,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1872884566232060}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.38, y: 1.66, z: 1.4}
+  m_LocalPosition: {x: 16.83, y: 1, z: -0.4270387}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4231337475249456}
@@ -143,14 +143,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 5
-  damage: 1
+  damage: 0
   range: 10
   timer: 0
   timerReset: 1
   targets: []
-  shot: {fileID: 114462201585322940, guid: 922862cc133699c4283088aa6957ca99, type: 2}
+  shot: {fileID: 114885975963063050, guid: 038507cbe99b29d4f808906c121687e9, type: 2}
   spawner: {fileID: 1722495593212956}
-  shotSpeed: 15
+  shotSpeed: 8
 --- !u!135 &135395885621980134
 SphereCollider:
   m_ObjectHideFlags: 1
