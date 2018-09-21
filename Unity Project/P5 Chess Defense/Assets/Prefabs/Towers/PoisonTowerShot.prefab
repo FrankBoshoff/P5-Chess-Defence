@@ -84,13 +84,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
-  speed: 2
+  speed: 0
   poisonous: 1
   explosive: 0
   target: {fileID: 0}
   lifeTimer: 20
   blast: {fileID: 114824393413370362, guid: 1257d984ddf04924da2e2b04f4e76989, type: 2}
   b: {fileID: 0}
+  ticks: 0
 --- !u!135 &135849410738392018
 SphereCollider:
   m_ObjectHideFlags: 1

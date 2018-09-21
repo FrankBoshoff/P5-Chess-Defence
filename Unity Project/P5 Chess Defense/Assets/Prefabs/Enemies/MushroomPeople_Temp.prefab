@@ -155,7 +155,7 @@ MonoBehaviour:
   isPoisoned: 0
   poisonDamage: 1
   timeOfPoison: 1
-  poisonTicks: 2
+  poisonTicks: 0
   towers: []
 --- !u!136 &136176312266912322
 CapsuleCollider:

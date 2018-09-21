@@ -167,7 +167,7 @@ MonoBehaviour:
   isPoisoned: 0
   poisonDamage: 1
   timeOfPoison: 1
-  poisonTicks: 2
+  poisonTicks: 0
   towers: []
 --- !u!195 &195773202053051210
 NavMeshAgent:

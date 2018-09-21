@@ -151,6 +151,7 @@ MonoBehaviour:
   shot: {fileID: 114885975963063050, guid: 038507cbe99b29d4f808906c121687e9, type: 2}
   spawner: {fileID: 1722495593212956}
   shotSpeed: 8
+  poisonTicks: 2
 --- !u!135 &135395885621980134
 SphereCollider:
   m_ObjectHideFlags: 1

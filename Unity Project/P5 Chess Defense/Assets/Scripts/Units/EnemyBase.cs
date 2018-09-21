@@ -37,7 +37,8 @@ public class EnemyBase : Units
         {
             poisonTimer += Time.deltaTime;
             IsPoisoned();
-            poisonParticals.Play();//
+            poisonParticals.Play();
+            Debug.Log(poisonParticals);
         }
     }
 
@@ -62,15 +63,16 @@ public class EnemyBase : Units
         if (poisonTimer >= timeOfPoison)
         {
 
-            health -= poisonDamage;
             poisonTimer = 0;
             poisonTicks -= 1;
             if (poisonTicks <= 0)
             {
                 isPoisoned = false;
-                poisonParticals.Stop();//
+                poisonParticals.Stop();
+                Debug.Log(poisonParticals+"stop");
+
             }
-            Death();
+            TakeDamage(poisonDamage);
         }
     }
 
