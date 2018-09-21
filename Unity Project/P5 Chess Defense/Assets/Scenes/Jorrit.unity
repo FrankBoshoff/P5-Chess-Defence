@@ -424,9 +424,18 @@ MonoBehaviour:
   waveNumber: 0
   waveText: {fileID: 1820347691}
   cash: 0
+  startCash: 0
   cashText: {fileID: 301821491}
   pauseMenu: {fileID: 660839585}
   continueButton: {fileID: 614004868}
+  exitButton: {fileID: 0}
+  shop: {fileID: 0}
+  shopTower1: {fileID: 0}
+  shopTower2: {fileID: 0}
+  shopTower3: {fileID: 0}
+  shopTower4: {fileID: 0}
+  shopTower5: {fileID: 0}
+  shopClose: {fileID: 0}
 --- !u!4 &264234197
 Transform:
   m_ObjectHideFlags: 0
@@ -540,6 +549,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4694186234693120, guid: 40fd03308ec3cb74e86ec4500ca33764, type: 2}
       propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114539139153811778, guid: 40fd03308ec3cb74e86ec4500ca33764,
+        type: 2}
+      propertyPath: shotSpeed
       value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3661,6 +3675,11 @@ Prefab:
       propertyPath: m_Name
       value: MagicMissleTower_temp (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114539139153811778, guid: 40fd03308ec3cb74e86ec4500ca33764,
+        type: 2}
+      propertyPath: shotSpeed
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40fd03308ec3cb74e86ec4500ca33764, type: 2}
   m_IsPrefabAsset: 0
@@ -4483,7 +4502,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4700202870050026, guid: e4fead8fda2aafa499dd373b1709518c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.53
+      value: 7.03
       objectReference: {fileID: 0}
     - target: {fileID: 4700202870050026, guid: e4fead8fda2aafa499dd373b1709518c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4554,6 +4573,11 @@ Prefab:
     - target: {fileID: 1729509880636030, guid: 40fd03308ec3cb74e86ec4500ca33764, type: 2}
       propertyPath: m_Name
       value: MagicMissleTower_temp (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114539139153811778, guid: 40fd03308ec3cb74e86ec4500ca33764,
+        type: 2}
+      propertyPath: shotSpeed
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40fd03308ec3cb74e86ec4500ca33764, type: 2}
