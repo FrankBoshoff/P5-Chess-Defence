@@ -7,7 +7,7 @@ public class EnemyBase : Units
 {
     Transform navemeshTarget;
     NavMeshAgent enemyModel;
-    public ParticleSystem poisonParticals;
+    ParticleSystem poisonParticals;
     public int enemyMoveSpeed;
     public GameObject wave;
     public GameObject ui;
@@ -25,7 +25,9 @@ public class EnemyBase : Units
 
     void Start()
     {
-        poisonParticals.Pause();
+        poisonParticals = this.GetComponentInChildren<ParticleSystem>();//
+        poisonParticals.Pause();//
+
         navemeshTarget = GameObject.FindWithTag("Wizard").transform;
         this.GetComponent<NavMeshAgent>().speed = enemyMoveSpeed;
         EnemyMove();
@@ -37,8 +39,11 @@ public class EnemyBase : Units
         {
             poisonTimer += Time.deltaTime;
             IsPoisoned();
-            poisonParticals.Play();
-            Debug.Log(poisonParticals);
+            poisonParticals.Play();//
+        }
+        else
+        {
+            poisonParticals.Stop();//
         }
     }
 
@@ -68,9 +73,7 @@ public class EnemyBase : Units
             if (poisonTicks <= 0)
             {
                 isPoisoned = false;
-                poisonParticals.Stop();
-                Debug.Log(poisonParticals+"stop");
-
+                poisonParticals.Pause();//
             }
             TakeDamage(poisonDamage);
         }
@@ -83,7 +86,7 @@ public class EnemyBase : Units
         {
             g.GetComponent<TowerBase>().RemoveTarget(gameObject.transform);
         }
-        poisonParticals.Stop();
+        poisonParticals.Stop();//
         wave.GetComponent<WaveManager>().toKill -= 1;
         ui.GetComponent<UIManager>().UpdateEconomyUI(Random.Range(minWorth, maxWorth));
         base.Death();
