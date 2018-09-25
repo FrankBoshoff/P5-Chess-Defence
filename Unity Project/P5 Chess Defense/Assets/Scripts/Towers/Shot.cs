@@ -15,12 +15,14 @@ public class Shot : MonoBehaviour {
     public int ticks;
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         transform.LookAt(target);
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
         transform.LookAt(target);
         transform.Translate(transform.forward * speed * Time.deltaTime);
         lifeTimer -= Time.deltaTime;
