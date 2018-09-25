@@ -67,7 +67,6 @@ public class EnemyBase : Units
     {
         if (poisonTimer >= timeOfPoison)
         {
-
             poisonTimer = 0;
             poisonTicks -= 1;
             if (poisonTicks <= 0)

@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnSpazzer : MonoBehaviour {
+public class SpawnSpazzer : MonoBehaviour
+{
 
     public Vector3 v;
     public float var;
@@ -16,7 +17,8 @@ public class SpawnSpazzer : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
         if(spaz == true)
         {
             v.x = Random.Range(t.position.x - var, t.position.x + var);
