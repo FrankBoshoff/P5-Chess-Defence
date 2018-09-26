@@ -36,6 +36,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4236220694595822}
+  - component: {fileID: 114599599491470212}
   m_Layer: 0
   m_Name: FrostTowerArea
   m_TagString: Untagged
@@ -240,6 +241,18 @@ MonoBehaviour:
   timerReset: 1
   targets: []
   slow: 2
+--- !u!114 &114599599491470212
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1204282264567932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33970161e764d2543960b95bd8a1ad85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  r: {x: 0, y: 25, z: 0}
 --- !u!135 &135298973120366914
 SphereCollider:
   m_ObjectHideFlags: 1

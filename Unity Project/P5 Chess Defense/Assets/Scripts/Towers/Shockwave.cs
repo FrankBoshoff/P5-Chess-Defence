@@ -7,6 +7,7 @@ public class Shockwave : Projectile {
     public Blast blast;
     public Blast b;
     public int blastSpeed;
+    public ParticleSystem ps;
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +20,7 @@ public class Shockwave : Projectile {
         if (timer <= 0)
         {
             Ability();
+            ps.Play();
             timer = timerReset;
         }
     }
