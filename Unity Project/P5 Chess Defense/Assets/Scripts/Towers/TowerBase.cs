@@ -24,10 +24,13 @@ public class TowerBase : MonoBehaviour {
         {
             timer = 0;
         }
-        if(targets[0] != null && timer <= 0)
+        if(targets.Count > 0)
         {
-            Ability();
-            timer = timerReset;
+            if (targets[0] != null && timer <= 0)
+            {
+                Ability();
+                timer = timerReset;
+            }
         }
 	}
 

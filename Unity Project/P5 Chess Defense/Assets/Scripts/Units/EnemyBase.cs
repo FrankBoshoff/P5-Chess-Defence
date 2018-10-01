@@ -59,7 +59,7 @@ public class EnemyBase : Units
         {
             Debug.Log("endpoint");
             target.gameObject.GetComponent<WizardScript>().TakeDamage(enemyDamage);
-            Destroy(gameObject);
+            Death();
         }
     }
 
