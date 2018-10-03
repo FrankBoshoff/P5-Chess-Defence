@@ -59,6 +59,8 @@ public class EnemyBase : Units
         {
             Debug.Log("endpoint");
             target.gameObject.GetComponent<WizardScript>().TakeDamage(enemyDamage);
+            minWorth = 0;
+            maxWorth = 0;
             Death();
         }
     }
