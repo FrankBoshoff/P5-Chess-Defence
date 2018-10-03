@@ -9,12 +9,14 @@ public class MainMenu : MonoBehaviour {
     public Button start;
     public Button options;
     public Button exit;
+    public Button gallery;
 
 	// Use this for initialization
 	void Start () {
         start.onClick.AddListener(StartGame);
         options.onClick.AddListener(Options);
         exit.onClick.AddListener(ExitGame);
+        gallery.onClick.AddListener(Gallery);
 	}
 	
 	// Update is called once per frame
@@ -38,5 +40,10 @@ public class MainMenu : MonoBehaviour {
     {
         print("exit");
         Application.Quit();
+    }
+
+    public void Gallery()
+    {
+        SceneManager.LoadScene("ArtRoom");
     }
 }
