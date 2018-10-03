@@ -108,6 +108,7 @@ public class ArtGallery : MonoBehaviour {
 
     public void Back()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
     }
 }
