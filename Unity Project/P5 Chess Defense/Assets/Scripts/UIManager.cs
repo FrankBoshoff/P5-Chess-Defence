@@ -23,6 +23,8 @@ public class UIManager : MonoBehaviour {
     public Button shopTower5;
     public Button shopClose;
 
+    public GameObject gameOver;
+
     // Use this for initialization
     void Start () {
         continueButton.onClick.AddListener(Continue);
@@ -79,5 +81,11 @@ public class UIManager : MonoBehaviour {
     {
         print("SHOP SHUT");
         shop.GetComponent<TowerBuilder>().CloseShop();
+    }
+
+    public void GameOver()
+    {
+        gameOver.SetActive(true);
+        Time.timeScale = 0;
     }
 }

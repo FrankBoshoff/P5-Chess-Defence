@@ -38,6 +38,7 @@ public class TowerBuilder : MonoBehaviour {
         {
             manager.GetComponent<UIManager>().UpdateEconomyUI(-tower.GetComponent<TowerBase>().cost);
             Instantiate(tower, t.position, Quaternion.identity);
+            gameObject.SetActive(false);
             CloseShop();
         }
         else

@@ -156,8 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00ed48df1b299c24583fbc9da45d886a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
-  poisonParticals: {fileID: 198903039709565702}
+  health: 20
   enemyMoveSpeed: 3
   wave: {fileID: 0}
   ui: {fileID: 0}
