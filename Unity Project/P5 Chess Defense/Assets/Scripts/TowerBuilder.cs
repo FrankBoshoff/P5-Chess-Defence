@@ -6,6 +6,7 @@ public class TowerBuilder : MonoBehaviour {
 
     public GameObject shop;
     public GameObject manager;
+    public int lightMultiplier;
     private float rotation;
     private Vector3 v;
 
@@ -34,6 +35,16 @@ public class TowerBuilder : MonoBehaviour {
                 shop.SetActive(true);
             }
         }
+    }
+
+    private void OnMouseEnter()
+    {
+        GetComponent<Light>().intensity *= lightMultiplier;
+    }
+
+    private void OnMouseExit()
+    {
+        GetComponent<Light>().intensity /= lightMultiplier;
     }
 
     public void BuildTower(Transform t, GameObject tower)

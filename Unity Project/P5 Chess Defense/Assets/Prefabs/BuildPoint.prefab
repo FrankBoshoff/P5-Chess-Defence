@@ -500,6 +500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shop: {fileID: 0}
   manager: {fileID: 0}
+  lightMultiplier: 3
   Towers:
   - {fileID: 1729509880636030, guid: 40fd03308ec3cb74e86ec4500ca33764, type: 2}
   - {fileID: 1148730070040464, guid: c4c3006e84d44ff4aa51b3f783019269, type: 2}
