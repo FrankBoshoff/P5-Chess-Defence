@@ -10,16 +10,22 @@ public class SpawnSpazzer : MonoBehaviour
     public Transform t;
     public bool spaz;
     public Shot shot;
+    private Transform target;
 
 	// Use this for initialization
 	void Start () {
-
+        
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
-        if(spaz == true)
+        if(GetComponentInParent<TowerBase>().targets.Count > 0)
+        {
+            target = GetComponentInParent<TowerBase>().targets[0];
+        }
+        transform.LookAt(target);
+        if (spaz == true)
         {
             v.x = Random.Range(t.position.x - var, t.position.x + var);
             v.z = Random.Range(t.position.z - var, t.position.z + var);
@@ -29,7 +35,7 @@ public class SpawnSpazzer : MonoBehaviour
 
     public void Shoot(Shot s, Transform target, int damage, int speed, bool explosion, bool poison, int ticks)
     {
-        shot = Instantiate(s, transform.position, Quaternion.identity);
+        shot = Instantiate(s, transform.position, transform.rotation);
         shot.damage = damage;
         shot.speed = speed;
         shot.target = target;

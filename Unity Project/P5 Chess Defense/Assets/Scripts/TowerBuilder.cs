@@ -6,12 +6,16 @@ public class TowerBuilder : MonoBehaviour {
 
     public GameObject shop;
     public GameObject manager;
+    private float rotation;
+    private Vector3 v;
 
     public List<GameObject> Towers = new List<GameObject>();
 
     // Use this for initialization
     void Start () {
-        transform.eulerAngles(0, Random.Range(0.0f, 360.0f));
+        rotation = Random.Range(0, 360);
+        v.y = rotation;
+        transform.eulerAngles = v;
 	}
 	
 	// Update is called once per frame
