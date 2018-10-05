@@ -11,7 +11,7 @@ public class TowerBuilder : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		
+        transform.eulerAngles(0, Random.Range(0.0f, 360.0f));
 	}
 	
 	// Update is called once per frame
