@@ -2612,19 +2612,19 @@ Transform:
   m_Children:
   - {fileID: 87629142}
   - {fileID: 2010421966}
-  - {fileID: 1795333622}
-  - {fileID: 1470529930}
-  - {fileID: 423913621}
-  - {fileID: 1926477278}
-  - {fileID: 295356616}
-  - {fileID: 2017368564}
-  - {fileID: 388806261}
-  - {fileID: 1345820839}
   - {fileID: 2074703179}
+  - {fileID: 2017368564}
   - {fileID: 1700097847}
-  - {fileID: 1624148961}
-  - {fileID: 1716958077}
+  - {fileID: 295356616}
+  - {fileID: 1926477278}
   - {fileID: 731906729}
+  - {fileID: 1624148961}
+  - {fileID: 388806261}
+  - {fileID: 1470529930}
+  - {fileID: 1795333622}
+  - {fileID: 423913621}
+  - {fileID: 1716958077}
+  - {fileID: 1345820839}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7080,7 +7080,7 @@ MonoBehaviour:
   waveNumber: 0
   waveText: {fileID: 1113996803}
   cash: 0
-  startCash: 10
+  startCash: 20
   cashText: {fileID: 1587952852}
   pauseMenu: {fileID: 1060733752}
   continueButton: {fileID: 1733243246}

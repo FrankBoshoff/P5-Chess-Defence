@@ -29,12 +29,12 @@ public class EnemyBase : Units
         poisonParticals.Pause();//
 
         navemeshTarget = GameObject.FindWithTag("Wizard").transform;
-        this.GetComponent<NavMeshAgent>().speed = enemyMoveSpeed;
         EnemyMove();
     }
 
     void Update()
     {
+        this.GetComponent<NavMeshAgent>().speed = enemyMoveSpeed;
         if (isPoisoned == true)
         {
             poisonTimer += Time.deltaTime;

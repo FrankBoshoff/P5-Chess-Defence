@@ -142,15 +142,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20143b8e58657314cbd7522a54e63a30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 10
-  damage: 2
+  cost: 3
+  damage: 1
   range: 7
   timer: 0
-  timerReset: 1
+  timerReset: 0.5
   targets: []
   shot: {fileID: 114756882240901226, guid: 0c53608c05a938e4fb19cdb0be47fdf3, type: 2}
   spawner: {fileID: 1069206211287314}
-  shotSpeed: 10
+  shotSpeed: 50
 --- !u!135 &135764244015985500
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -85,8 +85,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 0
   speed: 0
-  poisonous: 1
-  explosive: 0
+  poisonous: 0
+  explosive: 1
   target: {fileID: 0}
   lifeTimer: 20
   blast: {fileID: 114824393413370362, guid: 1257d984ddf04924da2e2b04f4e76989, type: 2}
@@ -99,7 +99,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1984465069275450}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
