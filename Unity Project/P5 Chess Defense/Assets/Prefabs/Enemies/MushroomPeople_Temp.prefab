@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 40
-  enemyMoveSpeed: 2
+  enemyMoveSpeed: 3
   wave: {fileID: 0}
   ui: {fileID: 0}
   minWorth: 5

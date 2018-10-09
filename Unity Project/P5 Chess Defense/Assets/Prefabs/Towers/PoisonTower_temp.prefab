@@ -143,14 +143,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 5
-  damage: 0
-  range: 10
+  damage: 1
+  range: 7
   timer: 0
   timerReset: 1
   targets: []
   shot: {fileID: 114885975963063050, guid: 038507cbe99b29d4f808906c121687e9, type: 2}
   spawner: {fileID: 1722495593212956}
-  shotSpeed: 8
+  shotSpeed: 30
   poisonTicks: 2
 --- !u!135 &135395885621980134
 SphereCollider:

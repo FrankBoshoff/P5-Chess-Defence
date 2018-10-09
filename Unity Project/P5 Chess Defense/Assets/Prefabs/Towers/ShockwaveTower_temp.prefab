@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 813ba53bdc0de7a4aa5fa2531dfc6f5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 10
+  cost: 20
   damage: 5
   range: 10
   timer: 0
@@ -137,7 +137,7 @@ MonoBehaviour:
   shotSpeed: 0
   blast: {fileID: 114824393413370362, guid: 1257d984ddf04924da2e2b04f4e76989, type: 2}
   b: {fileID: 0}
-  blastSpeed: 5
+  blastSpeed: 7
   ps: {fileID: 198352797813795046, guid: 20c35070711a4734fad0a8718851ffb1, type: 2}
 --- !u!114 &114683733786793034
 MonoBehaviour:

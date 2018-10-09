@@ -530,6 +530,16 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 0.19999999
       objectReference: {fileID: 0}
+    - target: {fileID: 108004889845450384, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644358859320522, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: lightMultiplier
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7044f8680d3ba4b449dd20ecf9ef9008, type: 2}
   m_IsPrefabAsset: 0
@@ -851,6 +861,16 @@ Prefab:
     - target: {fileID: 1653797117250864, guid: 7044f8680d3ba4b449dd20ecf9ef9008, type: 2}
       propertyPath: m_Name
       value: BuildPointTest (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 108004889845450384, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644358859320522, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: lightMultiplier
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7044f8680d3ba4b449dd20ecf9ef9008, type: 2}
@@ -1655,6 +1675,16 @@ Prefab:
       propertyPath: m_Name
       value: BuildPointTest (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 108004889845450384, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644358859320522, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: lightMultiplier
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7044f8680d3ba4b449dd20ecf9ef9008, type: 2}
   m_IsPrefabAsset: 0
@@ -1909,6 +1939,16 @@ Prefab:
       propertyPath: m_Name
       value: BuildPointTest (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 108004889845450384, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644358859320522, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: lightMultiplier
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7044f8680d3ba4b449dd20ecf9ef9008, type: 2}
   m_IsPrefabAsset: 0
@@ -2041,6 +2081,16 @@ Prefab:
         type: 2}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 108004889845450384, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644358859320522, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: lightMultiplier
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7044f8680d3ba4b449dd20ecf9ef9008, type: 2}
@@ -2866,6 +2916,16 @@ Prefab:
       propertyPath: manager
       value: 
       objectReference: {fileID: 1555870576}
+    - target: {fileID: 108004889845450384, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644358859320522, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: lightMultiplier
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7044f8680d3ba4b449dd20ecf9ef9008, type: 2}
   m_IsPrefabAsset: 0
@@ -3054,6 +3114,16 @@ Prefab:
     - target: {fileID: 1653797117250864, guid: 7044f8680d3ba4b449dd20ecf9ef9008, type: 2}
       propertyPath: m_Name
       value: BuildPointTest (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 108004889845450384, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644358859320522, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: lightMultiplier
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7044f8680d3ba4b449dd20ecf9ef9008, type: 2}
@@ -3381,6 +3451,16 @@ Prefab:
     - target: {fileID: 1653797117250864, guid: 7044f8680d3ba4b449dd20ecf9ef9008, type: 2}
       propertyPath: m_Name
       value: BuildPointTest (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 108004889845450384, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644358859320522, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: lightMultiplier
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7044f8680d3ba4b449dd20ecf9ef9008, type: 2}
@@ -5035,6 +5115,16 @@ Prefab:
       propertyPath: m_Name
       value: BuildPointTest (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 108004889845450384, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644358859320522, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: lightMultiplier
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7044f8680d3ba4b449dd20ecf9ef9008, type: 2}
   m_IsPrefabAsset: 0
@@ -5263,6 +5353,16 @@ Prefab:
     - target: {fileID: 1653797117250864, guid: 7044f8680d3ba4b449dd20ecf9ef9008, type: 2}
       propertyPath: m_Name
       value: BuildPointTest (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 108004889845450384, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644358859320522, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: lightMultiplier
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7044f8680d3ba4b449dd20ecf9ef9008, type: 2}
@@ -5632,6 +5732,16 @@ Prefab:
     - target: {fileID: 1653797117250864, guid: 7044f8680d3ba4b449dd20ecf9ef9008, type: 2}
       propertyPath: m_Name
       value: BuildPointTest (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 108004889845450384, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644358859320522, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: lightMultiplier
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7044f8680d3ba4b449dd20ecf9ef9008, type: 2}
@@ -6520,6 +6630,16 @@ Prefab:
     - target: {fileID: 1653797117250864, guid: 7044f8680d3ba4b449dd20ecf9ef9008, type: 2}
       propertyPath: m_Name
       value: BuildPointTest (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 108004889845450384, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644358859320522, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: lightMultiplier
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7044f8680d3ba4b449dd20ecf9ef9008, type: 2}
@@ -7897,6 +8017,16 @@ Prefab:
       propertyPath: m_Name
       value: BuildPointTest (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 108004889845450384, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644358859320522, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: lightMultiplier
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7044f8680d3ba4b449dd20ecf9ef9008, type: 2}
   m_IsPrefabAsset: 0
@@ -8704,6 +8834,16 @@ Prefab:
     - target: {fileID: 1653797117250864, guid: 7044f8680d3ba4b449dd20ecf9ef9008, type: 2}
       propertyPath: m_Name
       value: BuildPointTest (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 108004889845450384, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644358859320522, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: lightMultiplier
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7044f8680d3ba4b449dd20ecf9ef9008, type: 2}
@@ -10079,6 +10219,16 @@ Prefab:
     - target: {fileID: 1653797117250864, guid: 7044f8680d3ba4b449dd20ecf9ef9008, type: 2}
       propertyPath: m_Name
       value: BuildPointTest (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 108004889845450384, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644358859320522, guid: 7044f8680d3ba4b449dd20ecf9ef9008,
+        type: 2}
+      propertyPath: lightMultiplier
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7044f8680d3ba4b449dd20ecf9ef9008, type: 2}
