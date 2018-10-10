@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TowerBuilder : MonoBehaviour {
+public class TowerBuilder : MonoBehaviour
+{
 
     public GameObject shop;
     public GameObject manager;
@@ -55,6 +56,8 @@ public class TowerBuilder : MonoBehaviour {
             Instantiate(tower, t.position, Quaternion.identity);
             gameObject.SetActive(false);
             CloseShop();
+
+            //GameObject.FindWithTag("SoundManager").GetComponent<SoundManager>().PlaySound();
         }
         else
         {
