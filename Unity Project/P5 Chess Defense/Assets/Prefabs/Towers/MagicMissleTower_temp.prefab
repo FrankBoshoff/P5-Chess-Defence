@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 135764244015985500}
   - component: {fileID: 114539139153811778}
   - component: {fileID: 82822084485716036}
+  - component: {fileID: 65117925259472970}
   m_Layer: 0
   m_Name: MagicMissleTower_temp
   m_TagString: Untagged
@@ -116,6 +117,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1729509880636030}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &65117925259472970
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729509880636030}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 2, z: 1.0000002}
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!82 &82822084485716036
 AudioSource:
   m_ObjectHideFlags: 1
@@ -245,6 +258,10 @@ MonoBehaviour:
   timer: 0
   timerReset: 0.5
   targets: []
+  shopMenu: {fileID: 0}
+  sellMenu: {fileID: 0}
+  uiManager: {fileID: 0}
+  buildPoint: {fileID: 1870203007287364, guid: d1d836fca655d4946b860b8cfee52120, type: 2}
   buildSource: {fileID: 0}
   build: {fileID: 0}
   shot: {fileID: 114756882240901226, guid: 0c53608c05a938e4fb19cdb0be47fdf3, type: 2}

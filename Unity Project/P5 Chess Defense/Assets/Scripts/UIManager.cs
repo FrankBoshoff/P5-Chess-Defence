@@ -23,6 +23,10 @@ public class UIManager : MonoBehaviour {
     public Button shopTower5;
     public Button shopClose;
 
+    public GameObject seller;
+    public Button sell;
+    public Button sellClose;
+
     public GameObject gameOver;
 
     // Use this for initialization
@@ -35,6 +39,8 @@ public class UIManager : MonoBehaviour {
         shopTower4.onClick.AddListener(delegate { OrderTower(3); });
         shopTower5.onClick.AddListener(delegate { OrderTower(4); });
         shopClose.onClick.AddListener(CloseShop);
+        sell.onClick.AddListener(SellTower);
+        sellClose.onClick.AddListener(SellClose);
         UpdateEconomyUI(startCash);
     }
 	
@@ -77,10 +83,20 @@ public class UIManager : MonoBehaviour {
         shop.GetComponent<TowerBuilder>().BuildTower(shop.transform, shop.GetComponent<TowerBuilder>().Towers[i]);
     }
 
+    public void SellTower()
+    {
+        seller.GetComponent<TowerBase>().Sell();
+    }
+
     public void CloseShop()
     {
         print("SHOP SHUT");
         shop.GetComponent<TowerBuilder>().CloseShop();
+    }
+
+    public void SellClose()
+    {
+        seller.GetComponent<TowerBase>().sellMenu.SetActive(false);
     }
 
     public void GameOver()

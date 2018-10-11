@@ -10,6 +10,11 @@ public class TowerBase : MonoBehaviour {
     public float timer;
     public float timerReset;
     public List<Transform> targets = new List<Transform>();
+    public GameObject shopMenu;
+    public GameObject sellMenu;
+    public GameObject uiManager;
+    public GameObject buildPoint;
+    private GameObject g;
 
     public AudioSource buildSource;
     public AudioClip build;
@@ -50,7 +55,6 @@ public class TowerBase : MonoBehaviour {
         //add enemy to target list
         AddTarget(collision.transform);
         collision.GetComponent<EnemyBase>().towers.Add(gameObject);
-        print("check");
     }
 
     private void OnTriggerExit(Collider collision)
@@ -68,5 +72,30 @@ public class TowerBase : MonoBehaviour {
     public virtual void AddTarget(Transform t)
     {
         targets.Add(t);
+    }
+
+    private void OnMouseOver()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            if (sellMenu.activeSelf == false)
+            {
+                uiManager.GetComponent<UIManager>().seller = this.gameObject;
+                sellMenu.transform.position = Input.mousePosition;
+                sellMenu.SetActive(true);
+            }
+        }
+    }
+
+    public virtual void Sell()
+    {
+        uiManager.GetComponent<UIManager>().UpdateEconomyUI(cost / 2);
+        buildPoint.SetActive(true);
+        /*g = Instantiate(buildPoint, transform.position, Quaternion.identity);
+        g.GetComponent<TowerBuilder>().shop = shopMenu;
+        g.GetComponent<TowerBuilder>().sell = sellMenu;
+        g.GetComponent<TowerBuilder>().manager = uiManager;*/
+        sellMenu.SetActive(false);
+        Destroy(gameObject);
     }
 }

@@ -6,10 +6,12 @@ public class TowerBuilder : MonoBehaviour
 {
 
     public GameObject shop;
+    public GameObject sell;
     public GameObject manager;
     public int lightMultiplier;
     private float rotation;
     private Vector3 v;
+    private GameObject g;
 
     //public AudioSource buildSource;
     //public AudioClip build;
@@ -57,7 +59,11 @@ public class TowerBuilder : MonoBehaviour
         {
             //GameObject.FindWithTag("SoundManager").GetComponent<SoundManager>().PlaySound(buildSource, build);
             manager.GetComponent<UIManager>().UpdateEconomyUI(-tower.GetComponent<TowerBase>().cost);
-            Instantiate(tower, t.position, Quaternion.identity);
+            g = Instantiate(tower, t.position, Quaternion.identity);
+            g.GetComponent<TowerBase>().uiManager = manager;
+            g.GetComponent<TowerBase>().shopMenu = shop;
+            g.GetComponent<TowerBase>().sellMenu = sell;
+            g.GetComponent<TowerBase>().buildPoint = gameObject;
             gameObject.SetActive(false);
             CloseShop();
         }
@@ -69,7 +75,6 @@ public class TowerBuilder : MonoBehaviour
 
     public void CloseShop()
     {
-        print("SHOP CLOSE");
         shop.SetActive(false);
     }
 }

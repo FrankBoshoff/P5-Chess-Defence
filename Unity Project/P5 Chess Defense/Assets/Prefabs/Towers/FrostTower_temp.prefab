@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 135298973120366914}
   - component: {fileID: 114565494874164620}
   - component: {fileID: 82287982348023384}
+  - component: {fileID: 65801801986031588}
   m_Layer: 0
   m_Name: FrostTower_temp
   m_TagString: Untagged
@@ -208,6 +209,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1498387906990992}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &65801801986031588
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1498387906990992}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 2, z: 1.0000002}
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!82 &82287982348023384
 AudioSource:
   m_ObjectHideFlags: 1
@@ -337,6 +350,10 @@ MonoBehaviour:
   timer: 0
   timerReset: 1
   targets: []
+  shopMenu: {fileID: 0}
+  sellMenu: {fileID: 0}
+  uiManager: {fileID: 0}
+  buildPoint: {fileID: 1870203007287364, guid: d1d836fca655d4946b860b8cfee52120, type: 2}
   buildSource: {fileID: 0}
   build: {fileID: 0}
   slow: 3
