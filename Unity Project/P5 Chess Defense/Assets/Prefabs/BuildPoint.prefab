@@ -499,6 +499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shop: {fileID: 0}
+  sell: {fileID: 0}
   manager: {fileID: 0}
   lightMultiplier: 3
   Towers:

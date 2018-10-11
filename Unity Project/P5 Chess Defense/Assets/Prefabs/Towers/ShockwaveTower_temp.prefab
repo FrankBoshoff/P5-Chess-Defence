@@ -246,8 +246,8 @@ MonoBehaviour:
   sellMenu: {fileID: 0}
   uiManager: {fileID: 0}
   buildPoint: {fileID: 1870203007287364, guid: d1d836fca655d4946b860b8cfee52120, type: 2}
-  buildSource: {fileID: 0}
-  build: {fileID: 0}
+  buildSource: {fileID: 82078340457810872}
+  build: {fileID: 8300000, guid: 6e73c47724b527d489428b53c38ceee0, type: 3}
   shot: {fileID: 0}
   spawner: {fileID: 1656265948136758}
   shotSpeed: 0
