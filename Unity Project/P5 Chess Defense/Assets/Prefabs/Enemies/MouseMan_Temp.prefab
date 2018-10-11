@@ -150,6 +150,8 @@ MonoBehaviour:
   ui: {fileID: 0}
   minWorth: 3
   maxWorth: 5
+  wizarDamageSoundHolder: {fileID: 8300000, guid: c8d3e6180e252db4eadd6f1e5cb97564,
+    type: 3}
   enemyDamage: 1
   isPoisoned: 0
   poisonDamage: 1
