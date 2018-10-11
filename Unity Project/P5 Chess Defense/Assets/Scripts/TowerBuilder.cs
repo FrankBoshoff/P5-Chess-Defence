@@ -11,6 +11,9 @@ public class TowerBuilder : MonoBehaviour
     private float rotation;
     private Vector3 v;
 
+    //public AudioSource buildSource;
+    //public AudioClip build;
+
     public List<GameObject> Towers = new List<GameObject>();
 
     // Use this for initialization
@@ -52,12 +55,11 @@ public class TowerBuilder : MonoBehaviour
     {
         if(tower.GetComponent<TowerBase>().cost <= manager.GetComponent<UIManager>().cash)
         {
+            //GameObject.FindWithTag("SoundManager").GetComponent<SoundManager>().PlaySound(buildSource, build);
             manager.GetComponent<UIManager>().UpdateEconomyUI(-tower.GetComponent<TowerBase>().cost);
             Instantiate(tower, t.position, Quaternion.identity);
             gameObject.SetActive(false);
             CloseShop();
-
-            //GameObject.FindWithTag("SoundManager").GetComponent<SoundManager>().PlaySound();
         }
         else
         {

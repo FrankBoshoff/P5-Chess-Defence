@@ -11,14 +11,20 @@ public class TowerBase : MonoBehaviour {
     public float timerReset;
     public List<Transform> targets = new List<Transform>();
 
-	// Use this for initialization
-	void Start () {
+    public AudioSource buildSource;
+    public AudioClip build;
+
+    // Use this for initialization
+    void Start ()
+    {
         gameObject.GetComponent<SphereCollider>().radius = range;
         timer = 0;
+        GameObject.FindWithTag("SoundManager").GetComponent<SoundManager>().PlaySound(buildSource, build);
     }
 	
 	// Update is called once per frame
-	public virtual void Update () {
+	public virtual void Update ()
+    {
         timer -= Time.deltaTime;
         if(timer < 0)
         {

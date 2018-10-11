@@ -6,18 +6,15 @@ using UnityEngine.Audio;
 public class SoundManager : MonoBehaviour
 {
     public AudioSource b;
-    public AudioSource waveStart;
-    public AudioClip nextWaveSound;
 
     private void Start()
     {
         b.Play();
-        waveStart = gameObject.GetComponentInChildren<AudioSource>();
     }
 
-    public void PlaySound()
+    public void PlaySound(AudioSource s, AudioClip a)
     {
-        waveStart.PlayOneShot(nextWaveSound);
+        s.PlayOneShot(a);
     }
 
 }

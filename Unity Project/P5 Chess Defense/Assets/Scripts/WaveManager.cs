@@ -16,6 +16,9 @@ public class WaveManager : MonoBehaviour {
     public int maximumIncrease;
     public GameObject uiManager;
 
+    public AudioSource waveSource;
+    public AudioClip waveSound;
+
 	// Use this for initialization
 	void Start ()
     {
@@ -45,7 +48,7 @@ public class WaveManager : MonoBehaviour {
         timer = timerReset;
         NextSpawn();
 
-        GameObject.FindWithTag("SoundManager").GetComponent<SoundManager>().PlaySound();
+        GameObject.FindWithTag("SoundManager").GetComponent<SoundManager>().PlaySound(waveSource, waveSound);
 
     }
 
