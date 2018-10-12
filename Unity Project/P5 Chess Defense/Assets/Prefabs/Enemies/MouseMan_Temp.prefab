@@ -148,8 +148,15 @@ MonoBehaviour:
   enemyMoveSpeed: 12
   wave: {fileID: 0}
   ui: {fileID: 0}
+<<<<<<< HEAD
   minWorth: 5
   maxWorth: 7
+=======
+  minWorth: 3
+  maxWorth: 5
+  wizarDamageSoundHolder: {fileID: 8300000, guid: c8d3e6180e252db4eadd6f1e5cb97564,
+    type: 3}
+>>>>>>> c774b61940b107cd0adcbeff2e30dd016f48538e
   enemyDamage: 1
   isPoisoned: 0
   poisonDamage: 1

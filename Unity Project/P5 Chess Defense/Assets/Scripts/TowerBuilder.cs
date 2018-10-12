@@ -13,9 +13,6 @@ public class TowerBuilder : MonoBehaviour
     private Vector3 v;
     private GameObject g;
 
-    //public AudioSource buildSource;
-    //public AudioClip build;
-
     public List<GameObject> Towers = new List<GameObject>();
 
     // Use this for initialization
@@ -57,7 +54,6 @@ public class TowerBuilder : MonoBehaviour
     {
         if(tower.GetComponent<TowerBase>().cost <= manager.GetComponent<UIManager>().cash)
         {
-            //GameObject.FindWithTag("SoundManager").GetComponent<SoundManager>().PlaySound(buildSource, build);
             manager.GetComponent<UIManager>().UpdateEconomyUI(-tower.GetComponent<TowerBase>().cost);
             g = Instantiate(tower, t.position, Quaternion.identity);
             g.GetComponent<TowerBase>().uiManager = manager;
