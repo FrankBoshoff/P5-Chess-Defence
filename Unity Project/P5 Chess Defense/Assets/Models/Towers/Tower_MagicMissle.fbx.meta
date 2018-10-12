@@ -4,11 +4,15 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Tower_missletoe
     400000: //RootNode
+    400002: Tower_missletoe
     2100000: Tower_MagicMissle
     2100002: No Name
     2300000: //RootNode
+    2300002: Tower_missletoe
     3300000: //RootNode
+    3300002: Tower_missletoe
     4300000: Tower_MagicMissle
     4300002: Tower_missletoe
   externalObjects: {}
@@ -55,7 +59,7 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    preserveHierarchy: 0
+    preserveHierarchy: 1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001

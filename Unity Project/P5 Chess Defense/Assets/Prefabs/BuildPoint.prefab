@@ -503,7 +503,7 @@ MonoBehaviour:
   manager: {fileID: 0}
   lightMultiplier: 3
   Towers:
-  - {fileID: 1735222558942658, guid: 7130eb44a93e13d4ba6e12202e98d0d3, type: 2}
+  - {fileID: 1778707555446600, guid: 598b92ecba7d4aa49b6a07a3a58b2a97, type: 2}
   - {fileID: 1148730070040464, guid: c4c3006e84d44ff4aa51b3f783019269, type: 2}
   - {fileID: 1498387906990992, guid: 0c79a22dd6db9bd439e5547e6a525579, type: 2}
   - {fileID: 1404721613301070, guid: c1aac948aca49e14ab8fdaa1d389ccb1, type: 2}
