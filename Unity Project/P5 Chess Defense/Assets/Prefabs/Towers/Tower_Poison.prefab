@@ -351,7 +351,7 @@ MonoBehaviour:
   buildSource: {fileID: 82911118156978732}
   build: {fileID: 8300000, guid: 6e73c47724b527d489428b53c38ceee0, type: 3}
   shot: {fileID: 114885975963063050, guid: 038507cbe99b29d4f808906c121687e9, type: 2}
-  spawner: {fileID: 0}
+  spawner: {fileID: 1520595801293102}
   shotSpeed: 30
   poisonTicks: 2
 --- !u!114 &114401714155235024

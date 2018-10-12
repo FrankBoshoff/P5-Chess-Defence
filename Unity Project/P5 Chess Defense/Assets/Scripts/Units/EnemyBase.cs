@@ -14,6 +14,9 @@ public class EnemyBase : Units
     public int minWorth;
     public int maxWorth;
 
+    public AudioClip wizardDamageSoundHolder;
+    public GameObject soundObjectHolder;
+
     public int enemyDamage;
     //all of following variables recieved through poison dart
     public bool isPoisoned;
@@ -58,6 +61,7 @@ public class EnemyBase : Units
         if (target.gameObject.tag == ("Wizard"))
         {
             Debug.Log("endpoint");
+            target.gameObject.GetComponent<WizardScript>().WizardSoundReceiver(wizardDamageSoundHolder);
             target.gameObject.GetComponent<WizardScript>().TakeDamage(enemyDamage);
             minWorth = 0;
             maxWorth = 0;
@@ -82,12 +86,12 @@ public class EnemyBase : Units
 
     public override void Death()
     {
-        //change particals and sound
+        Instantiate(soundObjectHolder, transform.position, transform.rotation);
+        poisonParticals.Stop();//
         foreach(GameObject g in towers)
         {
             g.GetComponent<TowerBase>().RemoveTarget(gameObject.transform);
         }
-        poisonParticals.Stop();//
         wave.GetComponent<WaveManager>().toKill -= 1;
         ui.GetComponent<UIManager>().UpdateEconomyUI(Random.Range(minWorth, maxWorth));
         base.Death();
