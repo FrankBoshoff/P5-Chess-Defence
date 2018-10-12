@@ -20,6 +20,7 @@ AudioMixerController:
     - bc86c5371749cff4cad4817faa04f030
     - 538bbc4c114e8744d86fb6724a2aaea8
     - 8b4318e7e76b242419c20e197cc359d0
+    - d750e796a1e08e94a9120f91a5ee5b26
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -34,6 +35,7 @@ AudioMixerGroupController:
   m_Children:
   - {fileID: 243749010877075876}
   - {fileID: 243950004086385396}
+  - {fileID: 243236849398778448}
   m_Volume: 787a8935b59c5b749b63b490c1d1b3cc
   m_Pitch: 70dab7cb9ac3921489abbbd477b97cac
   m_Effects:
@@ -66,7 +68,25 @@ AudioMixerSnapshotController:
   m_FloatValues:
     a310545122c3c5d43a4375a90bb0e9ce: -7.8940816
     d2b23f62c1b22d6439175b9a2054a566: -9.833286
+    057c35b3b79ec5345b3c56696ffc52ab: -9.833286
   m_TransitionOverrides: {}
+--- !u!243 &243236849398778448
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: WizardHurt
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: d750e796a1e08e94a9120f91a5ee5b26
+  m_Children: []
+  m_Volume: 057c35b3b79ec5345b3c56696ffc52ab
+  m_Pitch: 3cc02c60b3a84e54f8ecb7c4fea17687
+  m_Effects:
+  - {fileID: 244169341309618074}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!243 &243749010877075876
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -101,6 +121,19 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!244 &244169341309618074
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 1178fbffe8ee5d0428fd831ff647fd21
+  m_EffectName: Attenuation
+  m_MixLevel: 862a9c91191e5dd49963a0f40ec92db2
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &244517405621657702
 AudioMixerEffectController:
   m_ObjectHideFlags: 3

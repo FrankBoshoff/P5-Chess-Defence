@@ -14,6 +14,8 @@ public class EnemyBase : Units
     public int minWorth;
     public int maxWorth;
 
+    public AudioClip wizarDamageSoundHolder;
+
     public int enemyDamage;
     //all of following variables recieved through poison dart
     public bool isPoisoned;
@@ -57,6 +59,8 @@ public class EnemyBase : Units
     {
         if (target.gameObject.tag == ("Wizard"))
         {
+            target.gameObject.GetComponent<WizardScript>().WizardSoundFunction(wizarDamageSoundHolder);
+
             Debug.Log("endpoint");
             target.gameObject.GetComponent<WizardScript>().TakeDamage(enemyDamage);
             minWorth = 0;
