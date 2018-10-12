@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 813ba53bdc0de7a4aa5fa2531dfc6f5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 20
+  cost: 25
   damage: 5
   range: 10
   timer: 0

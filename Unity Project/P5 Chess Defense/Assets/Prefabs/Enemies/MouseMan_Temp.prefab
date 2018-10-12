@@ -144,12 +144,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3668e7bfd426b514488db5885dd61266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 12
-  enemyMoveSpeed: 7
+  health: 3
+  enemyMoveSpeed: 12
   wave: {fileID: 0}
   ui: {fileID: 0}
-  minWorth: 3
-  maxWorth: 5
+  minWorth: 5
+  maxWorth: 7
   enemyDamage: 1
   isPoisoned: 0
   poisonDamage: 1
