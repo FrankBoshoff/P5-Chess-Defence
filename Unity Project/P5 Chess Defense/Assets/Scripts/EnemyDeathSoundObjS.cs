@@ -9,12 +9,13 @@ public class EnemyDeathSoundObjS : MonoBehaviour
 
     void Start()
     {
-        GameObject.FindWithTag("SoundManager").GetComponent<SoundManager>().PlaySound(enemyASource, enemyAClip);
+        DeathSoundObjFunction(enemyAClip);
+        Destroy(gameObject, 8);
     }
 
-    void Update()
+    public void DeathSoundObjFunction(AudioClip ad)
     {
-
+        GameObject.FindWithTag("SoundManager").GetComponent<SoundManager>().PlaySound(enemyASource, ad);
     }
 
 }

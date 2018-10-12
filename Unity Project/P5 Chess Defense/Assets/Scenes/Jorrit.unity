@@ -3477,7 +3477,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   UImanager: {fileID: 0}
+  DeathSoundObjHolder: {fileID: 1566883747515766, guid: 3858cac2a3d0ff94e867a5adfd3d7114,
+    type: 2}
   wizardAudioSource: {fileID: 852605315}
+  wizardDeathSoundHolder: {fileID: 8300000, guid: 3db95a43219e50c448b35b161a66beb6,
+    type: 3}
 --- !u!1001 &857540932
 Prefab:
   m_ObjectHideFlags: 0

@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 114100013449566938}
   - component: {fileID: 82907816969168390}
   m_Layer: 0
-  m_Name: EnemyDeathSoundObj
+  m_Name: DeathSoundObj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
