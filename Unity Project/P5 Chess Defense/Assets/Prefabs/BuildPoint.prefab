@@ -507,7 +507,7 @@ MonoBehaviour:
   - {fileID: 1148730070040464, guid: c4c3006e84d44ff4aa51b3f783019269, type: 2}
   - {fileID: 1498387906990992, guid: 0c79a22dd6db9bd439e5547e6a525579, type: 2}
   - {fileID: 1404721613301070, guid: c1aac948aca49e14ab8fdaa1d389ccb1, type: 2}
-  - {fileID: 1637616829248120, guid: 60a29a1e6c3f1d04292595891bb4a386, type: 2}
+  - {fileID: 1912611615888000, guid: d988be3ba94f4874b9f9be977c19c7c0, type: 2}
 --- !u!198 &198703868361168898
 ParticleSystem:
   m_ObjectHideFlags: 1
