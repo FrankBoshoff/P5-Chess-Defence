@@ -166,6 +166,8 @@ MonoBehaviour:
     type: 3}
   soundObjectHolder: {fileID: 1566883747515766, guid: 3858cac2a3d0ff94e867a5adfd3d7114,
     type: 2}
+  popUpTextPrefab: {fileID: 1301546081289564, guid: 4bc5bb7fd5964944f9ae7d06b3876857,
+    type: 2}
   enemyDamage: 3
   isPoisoned: 0
   poisonDamage: 1

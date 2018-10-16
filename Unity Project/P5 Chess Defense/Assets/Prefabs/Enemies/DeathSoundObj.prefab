@@ -150,3 +150,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyASource: {fileID: 82907816969168390}
   enemyAClip: {fileID: 8300000, guid: 20a23fef6dfe8ae4baf65ba23998b998, type: 3}
+  destroyTime: 2

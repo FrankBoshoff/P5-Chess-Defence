@@ -6,11 +6,12 @@ public class EnemyDeathSoundObjS : MonoBehaviour
 {
     public AudioSource enemyASource;
     public AudioClip enemyAClip;
+    public float destroyTime;
 
     void Start()
     {
         DeathSoundObjFunction(enemyAClip);
-        Destroy(gameObject, 8);
+        Destroy(gameObject, destroyTime);
     }
 
     public void DeathSoundObjFunction(AudioClip ad)

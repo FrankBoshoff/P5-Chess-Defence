@@ -11,11 +11,13 @@ public class EnemyBase : Units
     public int enemyMoveSpeed;
     public GameObject wave;
     public GameObject ui;
+    public int worth;
     public int minWorth;
     public int maxWorth;
 
     public AudioClip wizardDamageSoundHolder;
     public GameObject soundObjectHolder;
+    public GameObject popUpTextPrefab;
 
     public int enemyDamage;
     //all of following variables recieved through poison dart
@@ -28,6 +30,8 @@ public class EnemyBase : Units
 
     void Start()
     {
+        worth = Random.Range(minWorth, maxWorth);
+
         poisonParticals = this.GetComponentInChildren<ParticleSystem>();//
         poisonParticals.Pause();//
 
@@ -78,7 +82,7 @@ public class EnemyBase : Units
             if (poisonTicks <= 0)
             {
                 isPoisoned = false;
-                poisonParticals.Pause();//
+                //poisonParticals.Pause();
             }
             TakeDamage(poisonDamage);
         }
@@ -86,14 +90,21 @@ public class EnemyBase : Units
 
     public override void Death()
     {
+        ShowFloatingText();
         Instantiate(soundObjectHolder, transform.position, transform.rotation);
-        poisonParticals.Stop();//
-        foreach(GameObject g in towers)
+        foreach (GameObject g in towers)
         {
             g.GetComponent<TowerBase>().RemoveTarget(gameObject.transform);
         }
         wave.GetComponent<WaveManager>().toKill -= 1;
-        ui.GetComponent<UIManager>().UpdateEconomyUI(Random.Range(minWorth, maxWorth));
+        ui.GetComponent<UIManager>().UpdateEconomyUI(worth);
         base.Death();
     }
+
+    public void ShowFloatingText()
+    {
+        var go = Instantiate(popUpTextPrefab, transform.position, Quaternion.identity);
+        go.GetComponent<TextMesh>().text = worth.ToString() + "+ ";
+    }
+
 }
