@@ -10,6 +10,8 @@ public class WaveManager : MonoBehaviour {
     public int toKill;
     public float timer;
     public float timerReset;
+    public int waveNrSpawnSpeedIncreaseModulo;
+    public float spawnSpeedIncreaseMod;
     public GameObject spawner;
     public int increase;
     public int minimumIncrease;
@@ -40,7 +42,12 @@ public class WaveManager : MonoBehaviour {
 
     public void NewWave()
     {
+        uiManager.GetComponent<UIManager>().waveNumber += 1;
         uiManager.GetComponent<UIManager>().UpdateWaveUI();
+        if(uiManager.GetComponent<UIManager>().waveNumber % waveNrSpawnSpeedIncreaseModulo == 0)
+        {
+            spawner.GetComponent<Spawner>().spawntime *= spawnSpeedIncreaseMod;
+        }
         increase = Random.Range(minimumIncrease, maximumIncrease);
         minimumEnemies += increase;
         maximumEnemies += increase;

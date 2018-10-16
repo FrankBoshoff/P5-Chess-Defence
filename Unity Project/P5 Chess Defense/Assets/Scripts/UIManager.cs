@@ -68,7 +68,7 @@ public class UIManager : MonoBehaviour {
 
     public void UpdateWaveUI()
     {
-        waveNumber += 1;
+        //waveNumber += 1;
         waveText.GetComponent<Text>().text = "Wave: " + waveNumber.ToString();
     }
 
