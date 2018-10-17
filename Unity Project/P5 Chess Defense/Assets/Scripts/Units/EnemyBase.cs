@@ -14,10 +14,12 @@ public class EnemyBase : Units
     public int worth;
     public int minWorth;
     public int maxWorth;
+    bool reachWizard;
 
     public AudioClip wizardDamageSoundHolder;
     public GameObject soundObjectHolder;
     public GameObject popUpTextPrefab;
+    public GameObject popUpImagePrefab;
 
     public int enemyDamage;
     //all of following variables recieved through poison dart
@@ -30,6 +32,7 @@ public class EnemyBase : Units
 
     void Start()
     {
+        reachWizard = false;
         worth = Random.Range(minWorth, maxWorth);
 
         poisonParticals = this.GetComponentInChildren<ParticleSystem>();//
@@ -69,6 +72,7 @@ public class EnemyBase : Units
             target.gameObject.GetComponent<WizardScript>().TakeDamage(enemyDamage);
             minWorth = 0;
             maxWorth = 0;
+            reachWizard = true;
             Death();
         }
     }
@@ -90,7 +94,10 @@ public class EnemyBase : Units
 
     public override void Death()
     {
-        ShowFloatingText();
+        if(reachWizard == false)
+        {
+            ShowFloatingText();
+        }
         Instantiate(soundObjectHolder, transform.position, transform.rotation);
         foreach (GameObject g in towers)
         {
@@ -103,8 +110,11 @@ public class EnemyBase : Units
 
     public void ShowFloatingText()
     {
-        var go = Instantiate(popUpTextPrefab, transform.position, Quaternion.identity);
-        go.GetComponent<TextMesh>().text = worth.ToString() + "+ ";
+        var pText = Instantiate(popUpTextPrefab, transform.position, Quaternion.identity);
+        pText.GetComponent<TextMesh>().text = worth.ToString() + "+ ";
+
+        var pImage = Instantiate(popUpImagePrefab, transform.position, Quaternion.identity);
+        pImage.transform.SetParent(GameObject.Find("3DCanvas").transform);
     }
 
 }

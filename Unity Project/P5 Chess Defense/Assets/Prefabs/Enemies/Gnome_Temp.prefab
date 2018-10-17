@@ -160,6 +160,7 @@ MonoBehaviour:
   enemyMoveSpeed: 6
   wave: {fileID: 0}
   ui: {fileID: 0}
+  worth: 0
   minWorth: 3
   maxWorth: 5
   wizardDamageSoundHolder: {fileID: 8300000, guid: c8d3e6180e252db4eadd6f1e5cb97564,
@@ -167,6 +168,8 @@ MonoBehaviour:
   soundObjectHolder: {fileID: 1566883747515766, guid: 3858cac2a3d0ff94e867a5adfd3d7114,
     type: 2}
   popUpTextPrefab: {fileID: 1301546081289564, guid: 4bc5bb7fd5964944f9ae7d06b3876857,
+    type: 2}
+  popUpImagePrefab: {fileID: 1418083030330800, guid: 7173051fa8da55540bd9a6f6d34fbde1,
     type: 2}
   enemyDamage: 3
   isPoisoned: 0
