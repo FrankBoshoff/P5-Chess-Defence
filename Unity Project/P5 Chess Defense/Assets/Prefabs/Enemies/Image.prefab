@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 222191148755110578}
   - component: {fileID: 114854782096872608}
   - component: {fileID: 114527973822629744}
+  - component: {fileID: 95986901336881034}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -29,6 +30,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &95986901336881034
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1418083030330800}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1fa75925387f5c244aec43e0424a9a96, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114527973822629744
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -41,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyTime: 2
-  ofset: {x: 3, y: 2, z: 0}
+  ofset: {x: 1, y: 1.8, z: 0}
 --- !u!114 &114854782096872608
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54,7 +73,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.91119623, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
