@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class VolumeSetter : MonoBehaviour {
 
@@ -11,6 +12,8 @@ public class VolumeSetter : MonoBehaviour {
     public float masterVolume;
     public float musicVolume;
     public float effectsVolume;
+    public AudioMixer musicMixer;
+    public AudioMixer effectsMixer;
 
     // Use this to set references
     private void Awake()
@@ -58,6 +61,23 @@ public class VolumeSetter : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-		
-	}
+        masterVolume = masterSlider.value;
+        if (PlayerPrefs.HasKey("MasterVolume"))
+        {
+            PlayerPrefs.SetFloat("MasterVolume", masterVolume);
+            AudioListener.volume = PlayerPrefs.GetFloat("MasterVolume");
+        }
+        musicVolume = musicSlider.value;
+        if (PlayerPrefs.HasKey("MusicVolume"))
+        {
+            PlayerPrefs.SetFloat("MusicVolume", musicVolume);
+            musicMixer.SetFloat("MusicVolume", PlayerPrefs.GetFloat("MusicVolume"));
+        }
+        effectsVolume = effectsSlider.value;
+        if (PlayerPrefs.HasKey("EffectsVolume"))
+        {
+            PlayerPrefs.SetFloat("EffectsVolume", effectsVolume);
+            effectsMixer.SetFloat("EffectsVolume", PlayerPrefs.GetFloat("EffectsVolume"));
+        }
+    }
 }
