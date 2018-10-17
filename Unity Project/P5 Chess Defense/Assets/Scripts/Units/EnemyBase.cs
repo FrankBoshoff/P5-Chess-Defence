@@ -111,7 +111,7 @@ public class EnemyBase : Units
     public void ShowFloatingText()
     {
         var pText = Instantiate(popUpTextPrefab, transform.position, Quaternion.identity);
-        pText.GetComponent<TextMesh>().text = worth.ToString() + "+ ";
+        pText.GetComponent<TextMesh>().text = "+ " + worth.ToString();
 
         var pImage = Instantiate(popUpImagePrefab, transform.position, Quaternion.identity);
         pImage.transform.SetParent(GameObject.Find("3DCanvas").transform);

@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyTime: 2
-  ofset: {x: 1, y: 1.8, z: 0}
+  ofset: {x: 1.2, y: 1.6, z: 0}
 --- !u!114 &114854782096872608
 MonoBehaviour:
   m_ObjectHideFlags: 1
