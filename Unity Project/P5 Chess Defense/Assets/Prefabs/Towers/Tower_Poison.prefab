@@ -242,7 +242,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 243950004086385396, guid: fe4335d9c3b4a6f47b26585139e1a75c,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 6e73c47724b527d489428b53c38ceee0, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -370,6 +370,8 @@ MonoBehaviour:
   t: {fileID: 4653425131731572}
   spaz: 1
   shot: {fileID: 0}
+  towerShotSource: {fileID: 0}
+  towerShotAudioClip: {fileID: 0}
 --- !u!135 &135723660745129174
 SphereCollider:
   m_ObjectHideFlags: 1

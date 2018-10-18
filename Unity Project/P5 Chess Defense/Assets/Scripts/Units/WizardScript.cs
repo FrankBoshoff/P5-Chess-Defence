@@ -5,7 +5,7 @@ using UnityEngine;
 public class WizardScript : Units
 {
     public GameObject UImanager;
-    public GameObject DeathSoundObjHolder;
+    public GameObject deathSoundObjHolder;
     public AudioSource wizardAudioSource;
     public AudioClip wizardDeathSoundHolder;
     
@@ -16,8 +16,8 @@ public class WizardScript : Units
     
     public override void Death()
     {
-        DeathSoundObjHolder.GetComponent<EnemyDeathSoundObjS>().DeathSoundObjFunction(wizardDeathSoundHolder);
-        Instantiate(DeathSoundObjHolder, transform.position, transform.rotation);
+        deathSoundObjHolder.GetComponent<EnemyDeathSoundObjS>().DeathSoundObjFunction(wizardDeathSoundHolder);
+        Instantiate(deathSoundObjHolder, transform.position, transform.rotation);
         print("Game Over");
         base.Death();
     }

@@ -10,6 +10,10 @@ public class SpawnSpazzer : MonoBehaviour
     public Transform t;
     public bool spaz;
     public Shot shot;
+
+    public AudioSource towerShotSource;
+    public AudioClip towerShotAudioClip;
+
     private Transform target;
 
 	// Use this for initialization
@@ -42,5 +46,6 @@ public class SpawnSpazzer : MonoBehaviour
         shot.explosive = explosion;
         shot.poisonous = poison;
         shot.ticks = ticks;
+        GameObject.FindWithTag("SoundManager").GetComponent<SoundManager>().PlaySound(towerShotSource, towerShotAudioClip);
     }
 }

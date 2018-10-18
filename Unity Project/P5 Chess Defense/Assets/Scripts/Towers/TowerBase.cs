@@ -22,6 +22,7 @@ public class TowerBase : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
+        Debug.Log("Start EnemyBaseScript");
         gameObject.GetComponent<SphereCollider>().radius = range;
         timer = 0;
         GameObject.FindWithTag("SoundManager").GetComponent<SoundManager>().PlaySound(buildSource, build);

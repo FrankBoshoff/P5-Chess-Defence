@@ -237,14 +237,14 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 243950004086385396, guid: fe4335d9c3b4a6f47b26585139e1a75c,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 6e73c47724b527d489428b53c38ceee0, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 256
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -364,6 +364,8 @@ MonoBehaviour:
   t: {fileID: 4641766199367818}
   spaz: 1
   shot: {fileID: 0}
+  towerShotSource: {fileID: 82205262212982128}
+  towerShotAudioClip: {fileID: 8300000, guid: 5af43570318dc6b4fa6bd98c0620ffc7, type: 3}
 --- !u!135 &135011957122840150
 SphereCollider:
   m_ObjectHideFlags: 1
