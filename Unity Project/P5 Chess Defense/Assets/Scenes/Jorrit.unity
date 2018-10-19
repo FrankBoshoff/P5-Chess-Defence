@@ -722,7 +722,7 @@ MonoBehaviour:
   cash: 0
   startCash: 100
   cashText: {fileID: 1706651096}
-  pauseMenu: {fileID: 0}
+  pauseMenu: {fileID: 1772467468}
   continueButton: {fileID: 1687355908}
   exitButton: {fileID: 1685921197}
   shop: {fileID: 0}
