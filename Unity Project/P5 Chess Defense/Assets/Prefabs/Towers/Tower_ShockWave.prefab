@@ -37,7 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4050967764086300}
   - component: {fileID: 114181591649157556}
-  - component: {fileID: 82282790322173038}
+  - component: {fileID: 82797048629275362}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -401,7 +401,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!82 &82282790322173038
+--- !u!82 &82797048629275362
 AudioSource:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -419,7 +419,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 256
+  Priority: 128
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -513,8 +513,8 @@ MonoBehaviour:
   t: {fileID: 4650412257434376}
   spaz: 1
   shot: {fileID: 0}
-  towerShotSource: {fileID: 82282790322173038}
-  towerShotAudioClip: {fileID: 8300000, guid: 458ad07b504fbe548be71f31997dc62b, type: 3}
+  towerShotSource: {fileID: 0}
+  towerShotAudioClip: {fileID: 0}
 --- !u!114 &114464091087280774
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -545,6 +545,10 @@ MonoBehaviour:
   b: {fileID: 0}
   blastSpeed: 7
   ps: {fileID: 198352797813795046, guid: 20c35070711a4734fad0a8718851ffb1, type: 2}
+  chargeSoundHolder: {fileID: 0}
+  chargeSoundClip: {fileID: 8300000, guid: 458ad07b504fbe548be71f31997dc62b, type: 3}
+  chargeReleaseClip: {fileID: 8300000, guid: 6e73c47724b527d489428b53c38ceee0, type: 3}
+  chargeBool: 1
 --- !u!135 &135401385877025406
 SphereCollider:
   m_ObjectHideFlags: 1

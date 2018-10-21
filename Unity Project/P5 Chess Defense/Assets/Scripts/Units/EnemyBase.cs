@@ -32,6 +32,8 @@ public class EnemyBase : Units
 
     void Start()
     {
+        curHealth = startHealth;
+
         reachWizard = false;
         worth = Random.Range(minWorth, maxWorth);
 

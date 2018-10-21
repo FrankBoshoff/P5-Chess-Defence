@@ -1,10 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Units : MonoBehaviour
 {
-    public int health;
+    public Image healthBar;
+    public float startHealth;
+    public float curHealth;
+
+    void Start()
+    {
+        curHealth = startHealth;
+    }
 
     public virtual void Death()
     {
@@ -13,8 +21,9 @@ public class Units : MonoBehaviour
 
     public virtual void TakeDamage(int dmg)
     {
-        health -= dmg;
-        if(health <= 0)
+        curHealth -= dmg;
+        healthBar.fillAmount = curHealth / startHealth;
+        if(curHealth <= 0)
         {
             Death();
         }
