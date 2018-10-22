@@ -29,7 +29,6 @@ public class UIManager : MonoBehaviour
     public Button sellClose;
 
     public GameObject gameOver;
-    public GameObject tetorialUiTekst;
 
     // Use this for initialization
     void Start ()
@@ -45,8 +44,6 @@ public class UIManager : MonoBehaviour
         sell.onClick.AddListener(SellTower);
         sellClose.onClick.AddListener(SellClose);
         UpdateEconomyUI(startCash);
-
-        CheckIfTetorial();
     }
 	
 	// Update is called once per frame
@@ -109,22 +106,5 @@ public class UIManager : MonoBehaviour
     {
         gameOver.SetActive(true);
         Time.timeScale = 0;
-    }
-
-    public void CheckIfTetorial()
-    {
-        Scene curScene = SceneManager.GetActiveScene();
-        string curSceneName = curScene.name;
-
-        if (curSceneName == ("Tutorial"))
-        {
-            tetorialUiTekst.SetActive(true);
-            Debug.Log("Wel Tut");
-        }
-        else
-        {
-            tetorialUiTekst.SetActive(false);
-            Debug.Log("No Tut");
-        }
     }
 }
