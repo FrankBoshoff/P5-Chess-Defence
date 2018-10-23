@@ -3833,8 +3833,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5983ca46e608b6f4fbd9b4af58139c25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tutorialUiTekst: {fileID: 1221452940}
+  tutorialUiHolder: {fileID: 1221452940}
+  tutorialUIText: {fileID: 1760809984}
   curSentences: 0
+  interval01: 2
+  interval02: 4
   wizardSentences:
   - hello
   - t1

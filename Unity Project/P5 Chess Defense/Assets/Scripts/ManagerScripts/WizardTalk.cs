@@ -7,14 +7,20 @@ using UnityEngine.UI;
 public class WizardTalk : MonoBehaviour
 {
     public GameObject tutorialUiHolder;
-    //public Tekst tutorialUiTekst;  //engine.ui werkt niet
+    public Text tutorialUIText;
     public int curSentences;
+
+    public int interval01;
+    public int interval02;
 
     public List<string> wizardSentences;
 
 	void Start ()
     {
-        CheckIfTetorial();
+        //CheckIfTetorial();
+        tutorialUiHolder.SetActive(true);
+        tutorialUIText.text = wizardSentences[0];
+        Time.timeScale = 0;
     }
 
     //laat zin zien
@@ -25,9 +31,9 @@ public class WizardTalk : MonoBehaviour
         {
             if (Input.GetButtonDown("Next"))
             {
-
                 NextSentence();
-                //tutorialUiTekst.tekst
+                tutorialUIText.text = wizardSentences[curSentences];
+                NextPhase();
             }
         }
     }
@@ -41,22 +47,20 @@ public class WizardTalk : MonoBehaviour
                 break;
         }
     }
-
-    //kijken welke scene
-    public void CheckIfTetorial()
+    
+    public void NextPhase()
     {
-        Scene curScene = SceneManager.GetActiveScene();
-        string curSceneName = curScene.name;
+        if (wizardSentences[curSentences] == wizardSentences[interval01])
+        {
+            Debug.Log("pilsbaas");
+            //doe next
+        }
+        if (wizardSentences[curSentences] == wizardSentences[interval02])
+        {
+            Debug.Log("hallo wereld de wereld is van mij");
+        }
 
-        if (curSceneName == ("Tutorial"))
-        {
-            tutorialUiHolder.SetActive(true);
-            Debug.Log("Wel Tut");
-        }
-        else
-        {
-            tutorialUiHolder.SetActive(false);
-            Debug.Log("No Tut");
-        }
+
     }
+
 }
