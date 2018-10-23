@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class WizardTalk : MonoBehaviour
 {
-    public GameObject tutorialUiTekst;
+    public GameObject tutorialUiHolder;
+    //public Tekst tutorialUiTekst;  //engine.ui werkt niet
     public int curSentences;
 
     public List<string> wizardSentences;
@@ -20,25 +21,25 @@ public class WizardTalk : MonoBehaviour
     //curSentences gelijk aan listindex
     void Update ()
     {
-        NextSentence();
-        if (tutorialUiTekst == true)
+        if (tutorialUiHolder == true)
         {
-            //tutorialUiTekst.GetComponentInChildren<Tekst>();
+            if (Input.GetButtonDown("Next"))
+            {
+
+                NextSentence();
+                //tutorialUiTekst.tekst
+            }
         }
     }
 
     //volgende zin
     public void NextSentence()
     {
-        if (Input.GetButtonDown("Next"))
+        for (int i = 0; i < wizardSentences.Count; i++)
         {
-            for (int i = 0; i < wizardSentences.Count; i++)
-            {
                 curSentences += 1;
                 break;
-            }
         }
-
     }
 
     //kijken welke scene
@@ -49,12 +50,12 @@ public class WizardTalk : MonoBehaviour
 
         if (curSceneName == ("Tutorial"))
         {
-            tutorialUiTekst.SetActive(true);
+            tutorialUiHolder.SetActive(true);
             Debug.Log("Wel Tut");
         }
         else
         {
-            tutorialUiTekst.SetActive(false);
+            tutorialUiHolder.SetActive(false);
             Debug.Log("No Tut");
         }
     }
