@@ -3836,13 +3836,16 @@ MonoBehaviour:
   tutorialUiHolder: {fileID: 1221452940}
   tutorialUIText: {fileID: 1760809984}
   curSentences: 0
-  interval01: 2
+  interval01: 3
   interval02: 4
   wizardSentences:
-  - hello
-  - t1
-  - t2
-  - t3
+  - Hey you!
+  - I need your help!
+  - My experiments failt and comming after me.
+  - they are comming from the portal
+  - 
+  - t4
+  - t4
   - t4
 --- !u!4 &1069762739
 Transform:
@@ -6058,10 +6061,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 88
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 7
     m_MaxSize: 94
     m_Alignment: 4
     m_AlignByGeometry: 0

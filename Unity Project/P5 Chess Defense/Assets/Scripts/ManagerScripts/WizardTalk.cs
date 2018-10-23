@@ -53,14 +53,15 @@ public class WizardTalk : MonoBehaviour
         if (wizardSentences[curSentences] == wizardSentences[interval01])
         {
             Debug.Log("pilsbaas");
-            //doe next
+            Time.timeScale = 1;
         }
         if (wizardSentences[curSentences] == wizardSentences[interval02])
         {
             Debug.Log("hallo wereld de wereld is van mij");
         }
-
-
     }
+
+    //IEnumerator
+
 
 }
