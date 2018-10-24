@@ -3836,17 +3836,19 @@ MonoBehaviour:
   tutorialUiHolder: {fileID: 1221452940}
   tutorialUIText: {fileID: 1760809984}
   curSentences: 0
-  interval01: 3
-  interval02: 4
+  waitTime: 5
+  mayNextSentence: 0
+  interval01: 4
+  interval02: 6
   wizardSentences:
   - Hey you!
   - I need your help!
   - My experiments failt and comming after me.
   - they are comming from the portal
-  - 
-  - t4
-  - t4
-  - t4
+  - You can Build Towers to defend me
+  - All you need to do is click the books
+  - ..
+  - '...'
 --- !u!4 &1069762739
 Transform:
   m_ObjectHideFlags: 0

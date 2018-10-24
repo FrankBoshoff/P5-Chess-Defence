@@ -9,6 +9,8 @@ public class WizardTalk : MonoBehaviour
     public GameObject tutorialUiHolder;
     public Text tutorialUIText;
     public int curSentences;
+    public float waitTime;
+    public bool mayNextSentence;
 
     public int interval01;
     public int interval02;
@@ -19,6 +21,7 @@ public class WizardTalk : MonoBehaviour
     {
         //CheckIfTetorial();
         tutorialUiHolder.SetActive(true);
+        mayNextSentence = true;
         tutorialUIText.text = wizardSentences[0];
         Time.timeScale = 0;
     }
@@ -29,12 +32,17 @@ public class WizardTalk : MonoBehaviour
     {
         if (tutorialUiHolder == true)
         {
-            if (Input.GetButtonDown("Next"))
+            if (mayNextSentence == true)
             {
-                NextSentence();
-                tutorialUIText.text = wizardSentences[curSentences];
-                NextPhase();
+                if (Input.GetButtonDown("Next"))
+                {
+                    NextSentence();
+                    tutorialUIText.text = wizardSentences[curSentences];
+                    NextPhase();
+                }
             }
+
+            UiOnOrOf();
         }
     }
 
@@ -54,14 +62,36 @@ public class WizardTalk : MonoBehaviour
         {
             Debug.Log("pilsbaas");
             Time.timeScale = 1;
+            StartCoroutine(WaitForNextStep());
+            mayNextSentence = false;
+
         }
         if (wizardSentences[curSentences] == wizardSentences[interval02])
         {
             Debug.Log("hallo wereld de wereld is van mij");
+            mayNextSentence = false;
+            Time.timeScale = 1;
         }
     }
 
-    //IEnumerator
+    IEnumerator WaitForNextStep()
+    {
+        yield return new WaitForSeconds(waitTime);
+        mayNextSentence = true;
+        Time.timeScale = 0;
+    }
+
+    public void UiOnOrOf()
+    {
+        if (mayNextSentence == true)
+        {
+            tutorialUiHolder.SetActive(true);
+        }
+        if (mayNextSentence == false)
+        {
+            tutorialUiHolder.SetActive(false);
+        }
+    }
 
 
 }
