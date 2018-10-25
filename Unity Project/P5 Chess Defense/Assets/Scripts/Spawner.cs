@@ -7,10 +7,11 @@ public class Spawner : MonoBehaviour
     public List<GameObject> enemyHolder;
     public float spawntime;
     public bool maySpawn;
-    GameObject rEnemy;
     public GameObject manager;
-    GameObject e;
     public GameObject ui;
+
+    public GameObject rEnemy;
+    GameObject e;
 
     void Start()
     {

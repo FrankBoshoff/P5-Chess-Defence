@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class WizardTalk : MonoBehaviour
 {
     public GameObject tutorialUiHolder;
+    public GameObject tutorialSpawnerObject;
+    public GameObject waveManagerObject;
     public Text tutorialUIText;
     public int curSentences;
     public float waitTime;
@@ -24,6 +26,7 @@ public class WizardTalk : MonoBehaviour
         mayNextSentence = true;
         tutorialUIText.text = wizardSentences[0];
         Time.timeScale = 0;
+
     }
 
     //laat zin zien
@@ -44,6 +47,7 @@ public class WizardTalk : MonoBehaviour
 
             UiOnOrOf();
         }
+        TutorialSpawner();
     }
 
     //volgende zin
@@ -66,6 +70,7 @@ public class WizardTalk : MonoBehaviour
             mayNextSentence = false;
 
         }
+
         if (wizardSentences[curSentences] == wizardSentences[interval02])
         {
             Debug.Log("hallo wereld de wereld is van mij");
@@ -93,5 +98,17 @@ public class WizardTalk : MonoBehaviour
         }
     }
 
-
+    public void TutorialSpawner()
+    {
+        if (GameObject.Find("UIManager").GetComponent<UIManager>().waveNumber == 1)
+        {
+            tutorialSpawnerObject.GetComponent<Spawner>().rEnemy = tutorialSpawnerObject.GetComponent<Spawner>().enemyHolder[0];
+            //waveManagerObject.GetComponent<WaveManager>().
+        }
+        if (GameObject.Find("UIManager").GetComponent<UIManager>().waveNumber == 2)
+        {
+            Debug.Log("Wave 2");
+            tutorialSpawnerObject.GetComponent<Spawner>().rEnemy = tutorialSpawnerObject.GetComponent<Spawner>().enemyHolder[1];
+        }
+    }
 }

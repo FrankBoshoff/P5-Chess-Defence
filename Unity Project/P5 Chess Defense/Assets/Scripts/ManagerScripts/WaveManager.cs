@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WaveManager : MonoBehaviour {
-
+public class WaveManager : MonoBehaviour
+{
     public int toSpawn;
     public int minimumEnemies;
     public int maximumEnemies;

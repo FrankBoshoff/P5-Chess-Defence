@@ -3834,12 +3834,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialUiHolder: {fileID: 1221452940}
+  tutorialSpawnerObject: {fileID: 1971788745}
+  waveManagerObject: {fileID: 643847760}
   tutorialUIText: {fileID: 1760809984}
   curSentences: 0
-  waitTime: 5
+  waitTime: 2
   mayNextSentence: 0
   interval01: 4
-  interval02: 6
+  interval02: 10
   wizardSentences:
   - Hey you!
   - I need your help!
@@ -3847,8 +3849,11 @@ MonoBehaviour:
   - they are comming from the portal
   - You can Build Towers to defend me
   - All you need to do is click the books
-  - ..
-  - '...'
+  - And select an tower
+  - You can only build a tower if you have enough mama
+  - Mana is shown in the left corner
+  - Good luck
+  - '....'
 --- !u!4 &1069762739
 Transform:
   m_ObjectHideFlags: 0
