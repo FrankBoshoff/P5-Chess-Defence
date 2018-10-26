@@ -70,7 +70,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1180230977669136}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00000058114523}
-  m_LocalPosition: {x: -0, y: 0, z: 0.042}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4475497338099252}
@@ -83,7 +83,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1131643469619752}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.9678142, y: 1, z: -15.261644}
+  m_LocalPosition: {x: 0.27556863, y: 1, z: -20.657774}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4879288930482062}
@@ -182,7 +182,7 @@ ParticleSystem:
   simulationSpeed: 1
   stopAction: 0
   looping: 1
-  prewarm: 0
+  prewarm: 1
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
@@ -3894,7 +3894,7 @@ ParticleSystem:
     maxLights: 20
   TrailModule:
     enabled: 0
-    mode: 1
+    mode: 0
     ratio: 1
     lifetime:
       serializedVersion: 2
@@ -3956,14 +3956,14 @@ ParticleSystem:
     dieWithParticles: 1
     sizeAffectsWidth: 1
     sizeAffectsLifetime: 0
-    inheritParticleColor: 1
+    inheritParticleColor: 0
     generateLightingData: 0
     splitSubEmitterRibbons: 0
     colorOverLifetime:
       serializedVersion: 2
-      minMaxState: 0
-      minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      minMaxState: 2
+      minColor: {r: 0.9294118, g: 0.60784316, b: 1, a: 1}
+      maxColor: {r: 0.75294125, g: 0.49411768, b: 0.8117648, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -5602,13 +5602,22 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.069767535
         - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 3.6741607
-          outSlope: 3.6741607
+          time: 0.48073745
+          value: 0.9945717
+          inSlope: -0.030723378
+          outSlope: -0.030723378
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.063122906
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: -1.9153541
+          outSlope: -1.9153541
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0.33333334
           outWeight: 0.33333334
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -5916,7 +5925,7 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 0.9150943, g: 0.375534, b: 0.8872144, a: 1}
-        key1: {r: 0.9490197, g: 0.95294124, b: 0.9450981, a: 1}
+        key1: {r: 0.9490197, g: 0.95294124, b: 0.9450981, a: 0.87058824}
         key2: {r: 0.9490197, g: 0.95294124, b: 0.9450981, a: 0}
         key3: {r: 0.9490197, g: 0.95294124, b: 0.9450981, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -5932,7 +5941,7 @@ ParticleSystem:
         ctime6: 0
         ctime7: 0
         atime0: 0
-        atime1: 48380
+        atime1: 65535
         atime2: 65535
         atime3: 0
         atime4: 0
@@ -5941,7 +5950,7 @@ ParticleSystem:
         atime7: 0
         m_Mode: 0
         m_NumColorKeys: 2
-        m_NumAlphaKeys: 3
+        m_NumAlphaKeys: 2
       minGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
