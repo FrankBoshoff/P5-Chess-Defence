@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TutorialLimiter : MonoBehaviour {
 
-    public GameObject uiManager;
     public GameObject shop1;
     public GameObject shop2;
     public GameObject shop3;
