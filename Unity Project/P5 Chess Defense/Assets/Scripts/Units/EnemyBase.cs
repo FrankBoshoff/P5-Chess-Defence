@@ -96,9 +96,11 @@ public class EnemyBase : Units
 
     public override void Death()
     {
+        gameObject.GetComponent<Collider>().enabled = false;
         if(reachWizard == false)
         {
             ShowFloatingText();
+            ui.GetComponent<UIManager>().UpdateEconomyUI(worth);
         }
         Instantiate(soundObjectHolder, transform.position, transform.rotation);
         foreach (GameObject g in towers)
@@ -106,7 +108,6 @@ public class EnemyBase : Units
             g.GetComponent<TowerBase>().RemoveTarget(gameObject.transform);
         }
         wave.GetComponent<WaveManager>().toKill -= 1;
-        ui.GetComponent<UIManager>().UpdateEconomyUI(worth);
         base.Death();
     }
 
