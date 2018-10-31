@@ -50,18 +50,11 @@ public class TowerBase : MonoBehaviour {
         //tower attack/effect goes here
     }
 
-    private void OnTriggerStay(Collider collision)
+    private void OnTriggerEnter(Collider collision)
     {
-        print("trigger");
         //add enemy to target list
-        if (!targets.Contains(collision.transform))
-        {
-            AddTarget(collision.transform);
-        }
-        if (!collision.GetComponent<EnemyBase>().towers.Contains(gameObject))
-        {
-            collision.GetComponent<EnemyBase>().towers.Add(gameObject);
-        }
+        AddTarget(collision.transform);
+        collision.GetComponent<EnemyBase>().towers.Add(gameObject);
     }
 
     private void OnTriggerExit(Collider collision)

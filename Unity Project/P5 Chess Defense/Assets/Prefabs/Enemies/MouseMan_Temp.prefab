@@ -200,7 +200,7 @@ MonoBehaviour:
   healthBar: {fileID: 114612041932874574}
   startHealth: 3
   curHealth: 0
-  enemyMoveSpeed: 8
+  enemyMoveSpeed: 12
   wave: {fileID: 0}
   ui: {fileID: 0}
   worth: 0

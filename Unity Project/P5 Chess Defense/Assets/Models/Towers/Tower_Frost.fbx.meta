@@ -4,19 +4,11 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Tower_Frost
-    100004: Tower_FrostIce
     400000: //RootNode
-    400002: Tower_Frost
-    400004: Tower_FrostIce
-    2100000: Tower_FrostIceM
-    2100002: Tower_FrostM
-    2300000: Tower_Frost
-    2300002: Tower_FrostIce
-    3300000: Tower_Frost
-    3300002: Tower_FrostIce
-    4300000: Tower_FrostIce
-    4300002: Tower_Frost
+    2100000: No Name
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Cube
   externalObjects: {}
   materials:
     importMaterials: 1

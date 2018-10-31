@@ -4,11 +4,19 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Tower_Fire
+    100004: Tower_FireTop
     400000: //RootNode
-    2100000: Tower_FireM
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Tower_Fire
+    400002: Tower_Fire
+    400004: Tower_FireTop
+    2100000: Tower_FireTopM
+    2100002: Tower_FireM
+    2300000: Tower_Fire
+    2300002: Tower_FireTop
+    3300000: Tower_Fire
+    3300002: Tower_FireTop
+    4300000: Tower_FireTop
+    4300002: Tower_Fire
   externalObjects: {}
   materials:
     importMaterials: 1

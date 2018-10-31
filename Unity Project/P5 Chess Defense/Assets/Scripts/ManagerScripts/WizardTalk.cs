@@ -16,9 +16,7 @@ public class WizardTalk : MonoBehaviour
 
     public int interval01;
     public int interval02;
-    public int interval03;
 
-    bool w2;
     public List<string> wizardSentences;
 
 	void Start ()
@@ -28,7 +26,7 @@ public class WizardTalk : MonoBehaviour
         mayNextSentence = true;
         tutorialUIText.text = wizardSentences[0];
         Time.timeScale = 0;
-        w2 = true;
+
     }
 
     //laat zin zien
@@ -49,7 +47,7 @@ public class WizardTalk : MonoBehaviour
 
             UiOnOrOf();
         }
-        TutorialFixedSpawner();
+        TutorialSpawner();
     }
 
     //volgende zin
@@ -70,18 +68,12 @@ public class WizardTalk : MonoBehaviour
             Time.timeScale = 1;
             StartCoroutine(WaitForNextStep());
             mayNextSentence = false;
+
         }
 
         if (wizardSentences[curSentences] == wizardSentences[interval02])
         {
             Debug.Log("hallo wereld de wereld is van mij");
-            mayNextSentence = false;
-            Time.timeScale = 1;
-        }
-
-        if (wizardSentences[curSentences] == wizardSentences[interval03])
-        {
-            Debug.Log("he ha ne he");
             mayNextSentence = false;
             Time.timeScale = 1;
         }
@@ -106,32 +98,17 @@ public class WizardTalk : MonoBehaviour
         }
     }
 
-    public void TutorialFixedSpawner()
+    public void TutorialSpawner()
     {
         if (GameObject.Find("UIManager").GetComponent<UIManager>().waveNumber == 1)
         {
-            tutorialSpawnerObject.GetComponent<Spawner>().rEnemy = tutorialSpawnerObject.GetComponent<Spawner>().enemyHolder[1];
+            tutorialSpawnerObject.GetComponent<Spawner>().rEnemy = tutorialSpawnerObject.GetComponent<Spawner>().enemyHolder[0];
+            //waveManagerObject.GetComponent<WaveManager>().
         }
         if (GameObject.Find("UIManager").GetComponent<UIManager>().waveNumber == 2)
         {
             Debug.Log("Wave 2");
-            tutorialSpawnerObject.GetComponent<Spawner>().rEnemy = tutorialSpawnerObject.GetComponent<Spawner>().enemyHolder[0];
-
-            if (w2== true)
-            {
-                StartCoroutine(WaitForNextStep());
-                w2 = false;
-            } 
+            tutorialSpawnerObject.GetComponent<Spawner>().rEnemy = tutorialSpawnerObject.GetComponent<Spawner>().enemyHolder[1];
         }
-        if (GameObject.Find("UIManager").GetComponent<UIManager>().waveNumber == 3 || GameObject.Find("UIManager").GetComponent<UIManager>().waveNumber == 4)
-        {
-            //random fix spawner
-        }
-        if (GameObject.Find("UIManager").GetComponent<UIManager>().waveNumber == 5)
-        {
-            Debug.Log("Wave 5");
-            tutorialSpawnerObject.GetComponent<Spawner>().rEnemy = tutorialSpawnerObject.GetComponent<Spawner>().enemyHolder[2];
-        }
-
     }
 }
