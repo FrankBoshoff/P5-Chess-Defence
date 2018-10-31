@@ -11,8 +11,11 @@ public class TutorialLimiter : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		
-	}
+        shop1.SetActive(false);
+        shop2.SetActive(false);
+        shop3.SetActive(false);
+        shop4.SetActive(false);
+    }
 	
 	// Update is called once per frame
 	void Update () {

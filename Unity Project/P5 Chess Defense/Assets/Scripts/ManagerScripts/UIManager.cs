@@ -30,6 +30,10 @@ public class UIManager : MonoBehaviour
 
     public GameObject gameOver;
 
+    public Button info;
+    public Button infoClose;
+    public GameObject infoScreen;
+
     // Use this for initialization
     void Start ()
     {
@@ -43,6 +47,8 @@ public class UIManager : MonoBehaviour
         shopClose.onClick.AddListener(CloseShop);
         sell.onClick.AddListener(SellTower);
         sellClose.onClick.AddListener(SellClose);
+        info.onClick.AddListener(ToggleInfo);
+        infoClose.onClick.AddListener(ToggleInfo);
         UpdateEconomyUI(startCash);
     }
 	
@@ -106,5 +112,19 @@ public class UIManager : MonoBehaviour
     {
         gameOver.SetActive(true);
         Time.timeScale = 0;
+    }
+
+    public void ToggleInfo()
+    {
+        if(infoScreen.activeSelf == false)
+        {
+            infoScreen.SetActive(true);
+            Time.timeScale = 0;
+        }
+        else
+        {
+            infoScreen.SetActive(false);
+            Time.timeScale = 1;
+        }
     }
 }
