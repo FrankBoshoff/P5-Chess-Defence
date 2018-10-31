@@ -313,13 +313,8 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       colored: 1
-<<<<<<< HEAD
       intensity: 0.2
       size: 1.72
-=======
-      intensity: 0.207
-      size: 1.91
->>>>>>> 50f457816fb60010ca1a8cb55544551e01678f6e
       luminanceContribution: 0.8
   vignette:
     m_Enabled: 1
