@@ -9,79 +9,79 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1006695015364860}
+  m_RootGameObject: {fileID: 1536944733603152}
   m_IsPrefabAsset: 1
---- !u!1 &1006695015364860
+--- !u!1 &1388463444825792
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4641766199367818}
-  - component: {fileID: 33685433475090330}
-  - component: {fileID: 23621081856841712}
-  - component: {fileID: 135011957122840150}
-  - component: {fileID: 114046181612795760}
-  - component: {fileID: 82890320138762544}
-  - component: {fileID: 65057866018824378}
+  - component: {fileID: 4478831587903198}
+  - component: {fileID: 114221450131624696}
+  - component: {fileID: 82124798668069874}
   m_Layer: 0
-  m_Name: Tower_MagicMissle
+  m_Name: GameObject (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1517663649771044
+--- !u!1 &1536944733603152
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4829980784348906}
-  - component: {fileID: 114614423153912532}
-  - component: {fileID: 82205262212982128}
+  - component: {fileID: 4684435440300432}
+  - component: {fileID: 33287939707089876}
+  - component: {fileID: 23550140803019188}
+  - component: {fileID: 135564295627640470}
+  - component: {fileID: 114829463685222382}
+  - component: {fileID: 82912138039236828}
+  - component: {fileID: 65741435441832544}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Tower_Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4641766199367818
+--- !u!4 &4478831587903198
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1006695015364860}
-  m_LocalRotation: {x: -6.123234e-17, y: 1, z: 6.123234e-17, w: -3.7493994e-33}
-  m_LocalPosition: {x: 30.512722, y: 4.9029867e-17, z: -3.5329742}
+  m_GameObject: {fileID: 1388463444825792}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: -0, z: 4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4684435440300432}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4684435440300432
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1536944733603152}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 23.934511, y: -8.748739e-18, z: 0.63041306}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4829980784348906}
+  - {fileID: 4478831587903198}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4829980784348906
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1517663649771044}
-  m_LocalRotation: {x: 6.123234e-17, y: -1, z: -6.123234e-17, w: -3.7493994e-33}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_Children: []
-  m_Father: {fileID: 4641766199367818}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23621081856841712
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!23 &23550140803019188
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1006695015364860}
+  m_GameObject: {fileID: 1536944733603152}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -91,7 +91,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 8b7ba470f3f3d5b4cb378ed17432f4f1, type: 2}
+  - {fileID: 2100000, guid: d33fa5777b794be42abd7f4ac3cb9d6e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -111,36 +111,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33685433475090330
+--- !u!33 &33287939707089876
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1006695015364860}
-  m_Mesh: {fileID: 4300000, guid: cea96a8a15e7ff04ab74511f89cf8a4d, type: 3}
---- !u!65 &65057866018824378
+  m_GameObject: {fileID: 1536944733603152}
+  m_Mesh: {fileID: 4300000, guid: a27910c8ccc4c4840a55618f87e45e1a, type: 3}
+--- !u!65 &65741435441832544
 BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1006695015364860}
+  m_GameObject: {fileID: 1536944733603152}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.9903696, y: 4.9787254, z: 1.9903696}
-  m_Center: {x: -0.000000029802322, y: 2.4893627, z: 0.000000059604645}
---- !u!82 &82205262212982128
+  m_Size: {x: 2.0502257, y: 2.050226, z: 4.5074244}
+  m_Center: {x: 0, y: -0.00000011920932, z: 2.2537122}
+--- !u!82 &82124798668069874
 AudioSource:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1517663649771044}
+  m_GameObject: {fileID: 1388463444825792}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243737473556986246, guid: fe4335d9c3b4a6f47b26585139e1a75c,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 5af43570318dc6b4fa6bd98c0620ffc7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 003195f647f0c434c82755f16563aad1, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -226,12 +226,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!82 &82890320138762544
+--- !u!82 &82912138039236828
 AudioSource:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1006695015364860}
+  m_GameObject: {fileID: 1536944733603152}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243950004086385396, guid: fe4335d9c3b4a6f47b26585139e1a75c,
@@ -244,7 +244,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 256
+  Priority: 128
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -322,38 +322,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &114046181612795760
+--- !u!114 &114221450131624696
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1006695015364860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20143b8e58657314cbd7522a54e63a30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 5
-  damage: 1
-  range: 7
-  timer: 0
-  timerReset: 0.5
-  targets: []
-  shopMenu: {fileID: 0}
-  sellMenu: {fileID: 0}
-  uiManager: {fileID: 0}
-  buildPoint: {fileID: 1870203007287364, guid: d1d836fca655d4946b860b8cfee52120, type: 2}
-  buildSource: {fileID: 82890320138762544}
-  build: {fileID: 8300000, guid: 6e73c47724b527d489428b53c38ceee0, type: 3}
-  shot: {fileID: 114756882240901226, guid: 0c53608c05a938e4fb19cdb0be47fdf3, type: 2}
-  spawner: {fileID: 1517663649771044}
-  shotSpeed: 50
---- !u!114 &114614423153912532
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1517663649771044}
+  m_GameObject: {fileID: 1388463444825792}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b8ff927db420634f8fc13690671b319, type: 3}
@@ -361,20 +335,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   v: {x: 0, y: 5, z: 0}
   var: 2
-  t: {fileID: 4641766199367818}
+  t: {fileID: 4684435440300432}
   spaz: 1
   shot: {fileID: 0}
-  towerShotSource: {fileID: 82205262212982128}
-  towerShotAudioClip: {fileID: 8300000, guid: 5af43570318dc6b4fa6bd98c0620ffc7, type: 3}
---- !u!135 &135011957122840150
+  towerShotSource: {fileID: 82124798668069874}
+  towerShotAudioClip: {fileID: 8300000, guid: 003195f647f0c434c82755f16563aad1, type: 3}
+--- !u!114 &114829463685222382
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1536944733603152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0b724f8b6bb82249acd01d78d62805b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 10
+  damage: 3
+  range: 10
+  timer: 0
+  timerReset: 5
+  targets: []
+  shopMenu: {fileID: 0}
+  sellMenu: {fileID: 0}
+  uiManager: {fileID: 0}
+  buildPoint: {fileID: 1870203007287364, guid: d1d836fca655d4946b860b8cfee52120, type: 2}
+  buildSource: {fileID: 82912138039236828}
+  build: {fileID: 8300000, guid: 6e73c47724b527d489428b53c38ceee0, type: 3}
+  shot: {fileID: 114924883909684730, guid: 0a672567134bf0a45a855eee2617bd55, type: 2}
+  spawner: {fileID: 1388463444825792}
+  shotSpeed: 30
+--- !u!135 &135564295627640470
 SphereCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1006695015364860}
+  m_GameObject: {fileID: 1536944733603152}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 7
-  m_Center: {x: -0.000000029802322, y: 2.4893627, z: 0.000000059604645}
+  m_Center: {x: 0, y: -0.000000119209275, z: 2.2537115}

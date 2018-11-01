@@ -50,6 +50,7 @@ public class UIManager : MonoBehaviour
         info.onClick.AddListener(ToggleInfo);
         infoClose.onClick.AddListener(ToggleInfo);
         UpdateEconomyUI(startCash);
+        print("UIStart");
     }
 	
 	// Update is called once per frame
@@ -84,7 +85,7 @@ public class UIManager : MonoBehaviour
     public void UpdateEconomyUI(int change)
     {
         cash += change;
-        cashText.GetComponent<Text>().text = "Cash: " + cash.ToString();
+        cashText.GetComponent<Text>().text = "Mana: " + cash.ToString();
     }
 
     public void OrderTower(int i)
