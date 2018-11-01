@@ -7170,6 +7170,10 @@ Prefab:
       propertyPath: LightsModule.intensityCurve.scalar
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4043436998600278, guid: e7c46daadc81fd647a62f003b1a66f66, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7c46daadc81fd647a62f003b1a66f66, type: 2}
   m_IsPrefabAsset: 0
