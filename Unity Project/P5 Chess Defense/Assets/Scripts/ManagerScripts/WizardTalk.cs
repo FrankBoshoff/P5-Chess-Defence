@@ -17,8 +17,10 @@ public class WizardTalk : MonoBehaviour
     public int interval01;
     public int interval02;
     public int interval03;
+    public int interval04;
 
     bool w2;
+    bool w3;
     public List<string> wizardSentences;
 
 	void Start ()
@@ -29,6 +31,7 @@ public class WizardTalk : MonoBehaviour
         tutorialUIText.text = wizardSentences[0];
         Time.timeScale = 0;
         w2 = true;
+        w3 = true;
     }
 
     //laat zin zien
@@ -85,6 +88,12 @@ public class WizardTalk : MonoBehaviour
             mayNextSentence = false;
             Time.timeScale = 1;
         }
+
+        if (wizardSentences[curSentences] == wizardSentences[interval04])
+        {
+            mayNextSentence = false;
+            Time.timeScale = 1;
+        }
     }
 
     IEnumerator WaitForNextStep()
@@ -106,11 +115,14 @@ public class WizardTalk : MonoBehaviour
         }
     }
 
+    //fix spawnamount
     public void TutorialFixedSpawner()
     {
         if (GameObject.Find("UIManager").GetComponent<UIManager>().waveNumber == 1)
         {
             tutorialSpawnerObject.GetComponent<Spawner>().rEnemy = tutorialSpawnerObject.GetComponent<Spawner>().enemyHolder[1];
+
+            //waveManagerObject.GetComponent<WaveManager>().toSpawn = 2;
         }
         if (GameObject.Find("UIManager").GetComponent<UIManager>().waveNumber == 2)
         {
@@ -126,11 +138,17 @@ public class WizardTalk : MonoBehaviour
         if (GameObject.Find("UIManager").GetComponent<UIManager>().waveNumber == 3 || GameObject.Find("UIManager").GetComponent<UIManager>().waveNumber == 4)
         {
             //random fix spawner
+            
         }
         if (GameObject.Find("UIManager").GetComponent<UIManager>().waveNumber == 5)
         {
             Debug.Log("Wave 5");
             tutorialSpawnerObject.GetComponent<Spawner>().rEnemy = tutorialSpawnerObject.GetComponent<Spawner>().enemyHolder[2];
+            if (w3 == true)
+            {
+                StartCoroutine(WaitForNextStep());
+                w3 = false;
+            }
         }
 
     }
