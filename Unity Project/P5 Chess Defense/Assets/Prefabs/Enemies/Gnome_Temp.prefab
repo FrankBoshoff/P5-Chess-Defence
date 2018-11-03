@@ -274,6 +274,7 @@ MonoBehaviour:
     type: 2}
   popUpImagePrefab: {fileID: 1418083030330800, guid: 7173051fa8da55540bd9a6f6d34fbde1,
     type: 2}
+  HCanvas: {fileID: 1425053583942416}
   enemyDamage: 3
   isPoisoned: 0
   poisonDamage: 1

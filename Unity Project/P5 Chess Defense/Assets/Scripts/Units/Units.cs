@@ -11,6 +11,7 @@ public class Units : MonoBehaviour
 
     void Start()
     {
+        
         curHealth = startHealth;
     }
 

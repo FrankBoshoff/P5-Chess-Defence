@@ -20,6 +20,8 @@ public class EnemyBase : Units
     public GameObject soundObjectHolder;
     public GameObject popUpTextPrefab;
     public GameObject popUpImagePrefab;
+    public GameObject HCanvas;
+    GameObject MainCameraObj;
 
     public int enemyDamage;
     //all of following variables recieved through poison dart
@@ -32,6 +34,7 @@ public class EnemyBase : Units
 
     void Start()
     {
+        MainCameraObj = GameObject.FindWithTag("MainCamera");
         curHealth = startHealth;
 
         reachWizard = false;
@@ -46,6 +49,7 @@ public class EnemyBase : Units
 
     void Update()
     {
+        HCanvas.transform.LookAt(MainCameraObj.transform);        
         this.GetComponent<NavMeshAgent>().speed = enemyMoveSpeed;
         if (isPoisoned == true)
         {
