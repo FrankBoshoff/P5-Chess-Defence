@@ -539,6 +539,9 @@ MonoBehaviour:
   buildPoint: {fileID: 1870203007287364, guid: d1d836fca655d4946b860b8cfee52120, type: 2}
   buildSource: {fileID: 82770054627603948}
   build: {fileID: 8300000, guid: 6e73c47724b527d489428b53c38ceee0, type: 3}
+  sellCilp: {fileID: 8300000, guid: b8404a4c3083ec94ba07d9ff689e802a, type: 3}
+  sellSoundObj: {fileID: 1658989365051808, guid: f6d75a09ffecdf0488aad865414b0f8d,
+    type: 2}
   slow: 3
 --- !u!114 &114629077398110002
 MonoBehaviour:
