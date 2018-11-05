@@ -20,5 +20,6 @@ public class WizardScript : Units
         Instantiate(deathSoundObjHolder, transform.position, transform.rotation);
         print("Game Over");
         base.Death();
+        UImanager.GetComponent<UIManager>().GameOver();
     }
 }
