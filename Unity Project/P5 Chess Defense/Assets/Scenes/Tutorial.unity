@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -89,7 +89,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000204, guid: 23314716c593ec6449d63f9b0b4d3416,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -2034,8 +2035,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1634479912}
-  - {fileID: 1326100903}
   - {fileID: 2071016750}
+  - {fileID: 1326100903}
   - {fileID: 16616396}
   - {fileID: 488782649}
   - {fileID: 549379345}
@@ -5905,6 +5906,24 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114895984627449560, guid: e7c46daadc81fd647a62f003b1a66f66,
+        type: 2}
+      propertyPath: enemyHolder.Array.data[2]
+      value: 
+      objectReference: {fileID: 1491627046451242, guid: c9e1413d9b9046a408af8f4221dd69e5,
+        type: 2}
+    - target: {fileID: 114895984627449560, guid: e7c46daadc81fd647a62f003b1a66f66,
+        type: 2}
+      propertyPath: enemyHolder.Array.data[1]
+      value: 
+      objectReference: {fileID: 1687032131622684, guid: 90663442bd8f4aa4baf347f2c3292c51,
+        type: 2}
+    - target: {fileID: 114895984627449560, guid: e7c46daadc81fd647a62f003b1a66f66,
+        type: 2}
+      propertyPath: enemyHolder.Array.data[0]
+      value: 
+      objectReference: {fileID: 1564994223644496, guid: e883b98c62cc46a4e8f8900d480dd476,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7c46daadc81fd647a62f003b1a66f66, type: 2}
   m_IsPrefabAsset: 0
@@ -7042,11 +7061,11 @@ RectTransform:
   m_Children:
   - {fileID: 985900707}
   m_Father: {fileID: 347593800}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 54.674988, y: 236.92}
+  m_AnchoredPosition: {x: 54.674988, y: 236.93}
   m_SizeDelta: {x: 109.349976, y: 157.95001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1326100904
@@ -10414,13 +10433,13 @@ RectTransform:
   m_Children:
   - {fileID: 321966830}
   m_Father: {fileID: 347593800}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 54.674988, y: 78.974976}
+  m_AnchoredPosition: {x: 54.674988, y: 78.97499}
   m_SizeDelta: {x: 109.349976, y: 157.95001}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.49999994, y: 0.4999999}
 --- !u!114 &2071016751
 MonoBehaviour:
   m_ObjectHideFlags: 0
