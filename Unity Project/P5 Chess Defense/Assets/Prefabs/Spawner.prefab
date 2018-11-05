@@ -26,7 +26,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!1 &1410167893187258
 GameObject:
@@ -42,7 +42,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!1 &1806776588272186
 GameObject:
@@ -59,7 +59,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &4043436998600278
 Transform:
@@ -68,7 +68,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1178544185897104}
   m_LocalRotation: {x: -0.70710677, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4509602412636454}
@@ -114,9 +114,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHolder:
-  - {fileID: 1556204239281172, guid: 6dcb9afcf570821408c8ec4e074d8b84, type: 2}
-  - {fileID: 1177153334812524, guid: 9f57ee654c11b514b9173a93390554b0, type: 2}
-  - {fileID: 1146168008921298, guid: e81a3234a296c3e4a88458011340a648, type: 2}
+  - {fileID: 1564994223644496, guid: e883b98c62cc46a4e8f8900d480dd476, type: 2}
+  - {fileID: 1687032131622684, guid: 90663442bd8f4aa4baf347f2c3292c51, type: 2}
+  - {fileID: 1491627046451242, guid: c9e1413d9b9046a408af8f4221dd69e5, type: 2}
   spawntime: 1
   maySpawn: 0
   manager: {fileID: 0}

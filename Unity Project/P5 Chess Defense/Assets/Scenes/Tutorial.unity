@@ -5875,11 +5875,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 198773545927263188, guid: e7c46daadc81fd647a62f003b1a66f66,
-        type: 2}
-      propertyPath: LightsModule.light
-      value: 
-      objectReference: {fileID: 954612123}
     - target: {fileID: 114895984627449560, guid: e7c46daadc81fd647a62f003b1a66f66,
         type: 2}
       propertyPath: manager
@@ -5890,40 +5885,11 @@ Prefab:
       propertyPath: ui
       value: 
       objectReference: {fileID: 1707844084}
-    - target: {fileID: 4043436998600278, guid: e7c46daadc81fd647a62f003b1a66f66, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1806776588272186, guid: e7c46daadc81fd647a62f003b1a66f66, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1410167893187258, guid: e7c46daadc81fd647a62f003b1a66f66, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1178544185897104, guid: e7c46daadc81fd647a62f003b1a66f66, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114895984627449560, guid: e7c46daadc81fd647a62f003b1a66f66,
+    - target: {fileID: 198773545927263188, guid: e7c46daadc81fd647a62f003b1a66f66,
         type: 2}
-      propertyPath: enemyHolder.Array.data[2]
+      propertyPath: LightsModule.light
       value: 
-      objectReference: {fileID: 1491627046451242, guid: c9e1413d9b9046a408af8f4221dd69e5,
-        type: 2}
-    - target: {fileID: 114895984627449560, guid: e7c46daadc81fd647a62f003b1a66f66,
-        type: 2}
-      propertyPath: enemyHolder.Array.data[1]
-      value: 
-      objectReference: {fileID: 1687032131622684, guid: 90663442bd8f4aa4baf347f2c3292c51,
-        type: 2}
-    - target: {fileID: 114895984627449560, guid: e7c46daadc81fd647a62f003b1a66f66,
-        type: 2}
-      propertyPath: enemyHolder.Array.data[0]
-      value: 
-      objectReference: {fileID: 1564994223644496, guid: e883b98c62cc46a4e8f8900d480dd476,
-        type: 2}
+      objectReference: {fileID: 954612123}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7c46daadc81fd647a62f003b1a66f66, type: 2}
   m_IsPrefabAsset: 0
