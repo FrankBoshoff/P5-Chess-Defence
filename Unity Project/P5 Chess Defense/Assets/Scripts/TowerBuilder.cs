@@ -55,7 +55,7 @@ public class TowerBuilder : MonoBehaviour
 
     public void BuildTower(Transform t, GameObject tower)
     {
-        if(tower.GetComponent<TowerBase>().cost <= manager.GetComponent<UIManager>().cash)
+        if(tower.GetComponent<TowerBase>().cost <= manager.GetComponent<UIManager>().cash && Time.timeScale != 0)
         {
             //GameObject.FindWithTag("SoundManager").GetComponent<SoundManager>().PlaySound(buildSource, build);
             manager.GetComponent<UIManager>().UpdateEconomyUI(-tower.GetComponent<TowerBase>().cost);

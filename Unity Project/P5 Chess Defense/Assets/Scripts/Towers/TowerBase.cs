@@ -56,23 +56,38 @@ public class TowerBase : MonoBehaviour {
 
     private void OnTriggerStay(Collider collision)
     {
-        print("trigger");
+        if(collision.gameObject.tag == "Enemy")
+        {
+            if (!targets.Contains(collision.transform))
+            {
+                AddTarget(collision.transform);
+            }
+            if (!collision.GetComponent<EnemyBase>().towers.Contains(gameObject))
+            {
+                collision.GetComponent<EnemyBase>().towers.Add(gameObject);
+            }
+        }
         //add enemy to target list
-        if (!targets.Contains(collision.transform))
+        /*if (!targets.Contains(collision.transform))
         {
             AddTarget(collision.transform);
         }
         if (!collision.GetComponent<EnemyBase>().towers.Contains(gameObject))
         {
             collision.GetComponent<EnemyBase>().towers.Add(gameObject);
-        }
+        }*/
     }
 
     private void OnTriggerExit(Collider collision)
     {
+        if (targets.Contains(collision.transform))
+        {
+            RemoveTarget(collision.transform);
+            collision.GetComponent<EnemyBase>().towers.Remove(gameObject);
+        }
         //remove enemy from target list
-        RemoveTarget(collision.transform);
-        collision.GetComponent<EnemyBase>().towers.Remove(gameObject);
+        /*RemoveTarget(collision.transform);
+        collision.GetComponent<EnemyBase>().towers.Remove(gameObject);*/
     }
 
     public virtual void RemoveTarget(Transform t)
