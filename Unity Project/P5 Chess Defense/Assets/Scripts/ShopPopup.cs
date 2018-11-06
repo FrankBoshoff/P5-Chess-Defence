@@ -22,9 +22,7 @@ public class ShopPopup : MonoBehaviour {
     {
         if (g.activeSelf == false)
         {
-            //manager.GetComponent<UIManager>().shop = gameObject;
             g.transform.position = Input.mousePosition;
-            print("temp");
             g.SetActive(true);
         }
     }
