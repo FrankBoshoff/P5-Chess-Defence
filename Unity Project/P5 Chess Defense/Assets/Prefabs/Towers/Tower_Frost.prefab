@@ -611,7 +611,7 @@ MonoBehaviour:
     type: 2}
   buildPar: {fileID: 198063570743024740, guid: 97abf2694c3c6824ebe7c7bd37315f7d, type: 2}
   SellPar: {fileID: 0}
-  slow: 3
+  slow: 2
 --- !u!114 &114629077398110002
 MonoBehaviour:
   m_ObjectHideFlags: 1
