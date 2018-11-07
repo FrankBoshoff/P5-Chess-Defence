@@ -382,6 +382,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 883ebba61601761499f0532cf862b7ec, type: 2}
   m_IsPrefabAsset: 0
+--- !u!108 &53981727 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 108546360509998628, guid: c025c4ef675f7a4468417b9e449833f9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1531257499}
 --- !u!4 &54431966 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4929404315915242, guid: 883ebba61601761499f0532cf862b7ec,
@@ -5460,7 +5465,7 @@ Prefab:
         type: 2}
       propertyPath: LightsModule.light
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 53981727}
     - target: {fileID: 114895984627449560, guid: e7c46daadc81fd647a62f003b1a66f66,
         type: 2}
       propertyPath: manager
@@ -5471,6 +5476,11 @@ Prefab:
       propertyPath: ui
       value: 
       objectReference: {fileID: 1707844084}
+    - target: {fileID: 198773545927263188, guid: e7c46daadc81fd647a62f003b1a66f66,
+        type: 2}
+      propertyPath: LightsModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7c46daadc81fd647a62f003b1a66f66, type: 2}
   m_IsPrefabAsset: 0
