@@ -21,6 +21,8 @@ public class TowerBase : MonoBehaviour {
     AudioSource sellSource;
     public AudioClip sellCilp;
     public GameObject sellSoundObj;
+    public ParticleSystem buildPar;
+    public ParticleSystem SellPar;
 
     // Use this for initialization
     void Start ()
@@ -29,6 +31,7 @@ public class TowerBase : MonoBehaviour {
         timer = 0;
         GameObject.FindWithTag("SoundManager").GetComponent<SoundManager>().PlaySound(buildSource, build);
         sellSource = sellSoundObj.GetComponent<AudioSource>();
+        buildPar.Play();
     }
 	
 	// Update is called once per frame
@@ -124,6 +127,7 @@ public class TowerBase : MonoBehaviour {
         sellMenu.SetActive(false);
 
         Instantiate(sellSoundObj, transform.position, Quaternion.identity);
+        Instantiate(SellPar, transform.position, Quaternion.identity);
         //GameObject.FindWithTag("SoundManager").GetComponent<SoundManager>().PlaySound(sellSource, sellCilp);
 
         Destroy(gameObject);
