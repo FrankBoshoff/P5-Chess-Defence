@@ -27,7 +27,7 @@ public class MainMenu : MonoBehaviour {
     public void StartGame()
     {
         print("start game");
-        SceneManager.LoadScene("Jorrit(Kopie)");
+        SceneManager.LoadScene("Game");
     }
 
     public void Options()
@@ -44,6 +44,6 @@ public class MainMenu : MonoBehaviour {
 
     public void Gallery()
     {
-        SceneManager.LoadScene("ArtRoom");
+        SceneManager.LoadScene("Tutorial");
     }
 }
