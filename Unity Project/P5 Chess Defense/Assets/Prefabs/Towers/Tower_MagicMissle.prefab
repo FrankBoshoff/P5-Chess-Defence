@@ -446,6 +446,8 @@ MonoBehaviour:
   sellCilp: {fileID: 8300000, guid: b8404a4c3083ec94ba07d9ff689e802a, type: 3}
   sellSoundObj: {fileID: 1658989365051808, guid: f6d75a09ffecdf0488aad865414b0f8d,
     type: 2}
+  buildPar: {fileID: 198457048997723168, guid: b5e13e55b1561794696172abea5b531a, type: 2}
+  SellPar: {fileID: 198063570743024740, guid: 97abf2694c3c6824ebe7c7bd37315f7d, type: 2}
   shot: {fileID: 114756882240901226, guid: 0c53608c05a938e4fb19cdb0be47fdf3, type: 2}
   spawner: {fileID: 1517663649771044}
   shotSpeed: 50

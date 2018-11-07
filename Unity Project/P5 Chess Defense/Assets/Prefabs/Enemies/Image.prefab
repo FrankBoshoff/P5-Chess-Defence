@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyTime: 2
-  ofset: {x: 1.45, y: 1.35, z: 0}
+  ofset: {x: 4, y: 1, z: 3}
   z: 0
   y: 45
   x: 45

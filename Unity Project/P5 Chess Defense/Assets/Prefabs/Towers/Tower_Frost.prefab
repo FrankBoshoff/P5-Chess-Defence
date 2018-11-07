@@ -609,6 +609,8 @@ MonoBehaviour:
   sellCilp: {fileID: 8300000, guid: b8404a4c3083ec94ba07d9ff689e802a, type: 3}
   sellSoundObj: {fileID: 1658989365051808, guid: f6d75a09ffecdf0488aad865414b0f8d,
     type: 2}
+  buildPar: {fileID: 198063570743024740, guid: 97abf2694c3c6824ebe7c7bd37315f7d, type: 2}
+  SellPar: {fileID: 0}
   slow: 3
 --- !u!114 &114629077398110002
 MonoBehaviour:
