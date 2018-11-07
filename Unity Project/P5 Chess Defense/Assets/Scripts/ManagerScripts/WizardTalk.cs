@@ -24,9 +24,17 @@ public class WizardTalk : MonoBehaviour
     bool w3;
     bool w4;
     bool w5;
+    bool mayTure;
+
     public List<string> wizardSentences;
 
-	void Start ()
+    public GameObject healthBook;
+    public GameObject manaBook;
+    public GameObject wave;
+    public GameObject help;
+    public GameObject panel;
+
+    void Start ()
     {
         //CheckIfTetorial();
 
@@ -39,12 +47,25 @@ public class WizardTalk : MonoBehaviour
         w3 = true;
         w4 = true;
         w5 = true;
+
+        healthBook.SetActive(false);
+        manaBook.SetActive(false);
+        wave.SetActive(false);
+        help.SetActive(false);
+        panel.SetActive(true);
+        mayTure = true;
     }
 
     //laat zin zien
     //curSentences gelijk aan listindex
     void Update ()
     {
+        
+        if (mayTure == true)
+        {
+            SetTrueStart();
+        }
+
         if (tutorialUiHolder == true)
         {
             if (mayNextSentence == true)
@@ -187,5 +208,33 @@ public class WizardTalk : MonoBehaviour
             }
         }
 
+    }
+
+
+    public void SetTrueStart()
+    {
+        Time.timeScale = 0;
+        if (wizardSentences[curSentences] == wizardSentences[3])
+        {
+            healthBook.SetActive(true);
+        }
+        if (wizardSentences[curSentences] == wizardSentences[6])
+        {
+            manaBook.SetActive(true);
+        }
+        if (wizardSentences[curSentences] == wizardSentences[7])
+        {
+            wave.SetActive(true);
+        }
+        if (wizardSentences[curSentences] == wizardSentences[8])
+        {
+            help.SetActive(true);
+        }
+        if (wizardSentences[curSentences] == wizardSentences[8])
+        {
+            panel.SetActive(false);
+            Time.timeScale = 1;
+            mayTure = false;
+        }
     }
 }
