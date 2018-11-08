@@ -1423,7 +1423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 114508097986645986}
-  startHealth: 20
+  startHealth: 12
   curHealth: 0
   enemyMoveSpeed: 3
   wave: {fileID: 0}
