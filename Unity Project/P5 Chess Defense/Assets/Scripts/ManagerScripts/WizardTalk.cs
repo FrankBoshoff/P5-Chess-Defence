@@ -162,7 +162,7 @@ public class WizardTalk : MonoBehaviour
 
         if (GameObject.Find("UIManager").GetComponent<UIManager>().waveNumber == 3)
         {
-            tutorialSpawnerObject.GetComponent<Spawner>().rEnemy = tutorialSpawnerObject.GetComponent<Spawner>().enemyHolder[Random.Range(0, 1)];
+            tutorialSpawnerObject.GetComponent<Spawner>().rEnemy = tutorialSpawnerObject.GetComponent<Spawner>().enemyHolder[Random.Range(0, 2)];
             print("Random 3 -4");
             if (w3 == true)
             {
@@ -175,7 +175,7 @@ public class WizardTalk : MonoBehaviour
 
         if (GameObject.Find("UIManager").GetComponent<UIManager>().waveNumber == 4)
         {
-            tutorialSpawnerObject.GetComponent<Spawner>().rEnemy = tutorialSpawnerObject.GetComponent<Spawner>().enemyHolder[Random.Range(0, 1)];
+            tutorialSpawnerObject.GetComponent<Spawner>().rEnemy = tutorialSpawnerObject.GetComponent<Spawner>().enemyHolder[Random.Range(0, 2)];
             if (w4 == true)
             {
                 waveManagerObject.GetComponent<WaveManager>().toSpawn = 5;

@@ -594,7 +594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 25
-  damage: 5
+  damage: 6
   range: 10
   timer: 0
   timerReset: 2

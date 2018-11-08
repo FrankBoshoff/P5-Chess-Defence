@@ -181,7 +181,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1870203007287364}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: 0, z: 18}
+  m_LocalPosition: {x: 1.56, y: 0, z: -14.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4768383071837980}
@@ -490,7 +490,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 0.007843138, g: 0.9607844, b: 0.9960785, a: 1}
+  m_Color: {r: 0.6499573, g: 0.23113209, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 3
   m_SpotAngle: 30
@@ -533,6 +533,7 @@ MonoBehaviour:
   sell: {fileID: 0}
   manager: {fileID: 0}
   lightMultiplier: 4
+  noManaText: {fileID: 0}
   Towers:
   - {fileID: 1006695015364860, guid: 598b92ecba7d4aa49b6a07a3a58b2a97, type: 2}
   - {fileID: 1536944733603152, guid: 5c8bb29c23c74dd49afae52758cccfdd, type: 2}
@@ -725,7 +726,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.4575472, b: 0.97830343, a: 1}
+      maxColor: {r: 1, g: 0.4575472, b: 0.9764706, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}

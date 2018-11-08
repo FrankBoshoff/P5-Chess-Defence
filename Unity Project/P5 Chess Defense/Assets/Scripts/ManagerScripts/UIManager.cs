@@ -85,7 +85,7 @@ public class UIManager : MonoBehaviour
     public void UpdateEconomyUI(int change)
     {
         cash += change;
-        cashText.GetComponent<Text>().text = "Mana: " + cash.ToString();
+        cashText.GetComponent<Text>().text = cash.ToString();
     }
 
     public void OrderTower(int i)

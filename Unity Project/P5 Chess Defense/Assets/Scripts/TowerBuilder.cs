@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TowerBuilder : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class TowerBuilder : MonoBehaviour
     private Vector3 v;
     private GameObject g;
 
+    public GameObject noManaText;
     //public AudioSource buildSource;
     //public AudioClip build;
 
@@ -23,6 +25,8 @@ public class TowerBuilder : MonoBehaviour
         rotation = Random.Range(0, 360);
         v.y = rotation;
         transform.eulerAngles = v;
+        noManaText = GameObject.FindWithTag("NoMana");
+        noManaText.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -71,7 +75,15 @@ public class TowerBuilder : MonoBehaviour
         else
         {
             print("not enough cash");
+            noManaText.SetActive(true);
+            StartCoroutine(NoManaReset());
         }
+    }
+
+    IEnumerator NoManaReset()
+    {
+        yield return new WaitForSeconds(1.5f);
+        noManaText.SetActive(false);
     }
 
     public void CloseShop()

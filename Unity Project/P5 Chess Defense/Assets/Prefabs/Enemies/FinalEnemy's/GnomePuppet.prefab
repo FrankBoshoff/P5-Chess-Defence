@@ -373,8 +373,8 @@ GameObject:
   - component: {fileID: 95934550777778750}
   - component: {fileID: 54807051423246384}
   - component: {fileID: 195638564826031686}
-  - component: {fileID: 65353741743572956}
   - component: {fileID: 114308723352232586}
+  - component: {fileID: 136870478115734882}
   m_Layer: 0
   m_Name: GnomePuppet
   m_TagString: Enemy
@@ -826,7 +826,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1564994223644496}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.9623144, y: 1.2236837e-16, z: -8.817571}
+  m_LocalPosition: {x: 11.781081, y: 0.20223522, z: 3.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4373701782051814}
@@ -1361,20 +1361,8 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 126
   m_CollisionDetection: 0
---- !u!65 &65353741743572956
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1564994223644496}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.5, z: 1}
-  m_Center: {x: 0, y: 1, z: 0}
 --- !u!95 &95560099971466634
 Animator:
   serializedVersion: 3
@@ -1384,7 +1372,7 @@ Animator:
   m_GameObject: {fileID: 1326915169208448}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 91e101021ea9b3c44b40b2b1f68d2faf, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1423,14 +1411,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 114511864260546270}
-  startHealth: 6
+  startHealth: 8
   curHealth: 0
-  enemyMoveSpeed: 3
+  enemyMoveSpeed: 4
   wave: {fileID: 0}
   ui: {fileID: 0}
   worth: 0
   minWorth: 3
-  maxWorth: 5
+  maxWorth: 4
   wizardDamageSoundHolder: {fileID: 8300000, guid: c8d3e6180e252db4eadd6f1e5cb97564,
     type: 3}
   soundObjectHolder: {fileID: 1566883747515766, guid: 3858cac2a3d0ff94e867a5adfd3d7114,
@@ -1442,7 +1430,7 @@ MonoBehaviour:
   HCanvas: {fileID: 1807999591946470}
   enemyDamage: 3
   isPoisoned: 0
-  poisonDamage: 1
+  poisonDamage: 2
   timeOfPoison: 1
   poisonTicks: 0
   towers: []
@@ -1537,6 +1525,19 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!136 &136870478115734882
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1564994223644496}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!137 &137792275992779054
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
