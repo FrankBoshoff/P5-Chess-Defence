@@ -230,7 +230,7 @@ public class WizardTalk : MonoBehaviour
         {
             help.SetActive(true);
         }
-        if (wizardSentences[curSentences] == wizardSentences[8])
+        if (wizardSentences[curSentences] == wizardSentences[9])
         {
             panel.SetActive(false);
             Time.timeScale = 1;
