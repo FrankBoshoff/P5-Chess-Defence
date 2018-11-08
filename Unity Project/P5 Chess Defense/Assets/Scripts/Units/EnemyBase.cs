@@ -119,9 +119,6 @@ public class EnemyBase : Units
     {
         var pText = Instantiate(popUpTextPrefab, transform.position, Quaternion.identity);
         pText.GetComponent<TextMesh>().text = "+ " + worth.ToString();
-
-        //var pImage = Instantiate(popUpImagePrefab, transform.position, Quaternion.identity);
-        //pImage.transform.SetParent(GameObject.Find("3DCanvas").transform);
     }
 
 }

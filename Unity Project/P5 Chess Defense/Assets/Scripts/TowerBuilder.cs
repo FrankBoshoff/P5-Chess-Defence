@@ -60,6 +60,7 @@ public class TowerBuilder : MonoBehaviour
             //GameObject.FindWithTag("SoundManager").GetComponent<SoundManager>().PlaySound(buildSource, build);
             manager.GetComponent<UIManager>().UpdateEconomyUI(-tower.GetComponent<TowerBase>().cost);
             g = Instantiate(tower, t.position, Quaternion.identity);
+            g.GetComponent<TowerBase>().TowerStart();
             g.GetComponent<TowerBase>().uiManager = manager;
             g.GetComponent<TowerBase>().shopMenu = shop;
             g.GetComponent<TowerBase>().sellMenu = sell;

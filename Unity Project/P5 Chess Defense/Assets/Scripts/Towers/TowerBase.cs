@@ -25,13 +25,14 @@ public class TowerBase : MonoBehaviour {
     public ParticleSystem SellPar;
 
     // Use this for initialization
-    void Start ()
+    public void TowerStart ()
     {
         gameObject.GetComponent<SphereCollider>().radius = range;
         timer = 0;
         GameObject.FindWithTag("SoundManager").GetComponent<SoundManager>().PlaySound(buildSource, build);
         sellSource = sellSoundObj.GetComponent<AudioSource>();
-        buildPar.Play();
+        Instantiate(buildPar, transform.position, Quaternion.identity);
+        print("test0202020");
     }
 	
 	// Update is called once per frame

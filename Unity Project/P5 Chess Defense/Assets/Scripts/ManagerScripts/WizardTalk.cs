@@ -33,6 +33,7 @@ public class WizardTalk : MonoBehaviour
     public GameObject wave;
     public GameObject help;
     public GameObject panel;
+    public GameObject towerEdit;
 
     void Start ()
     {
@@ -52,6 +53,7 @@ public class WizardTalk : MonoBehaviour
         manaBook.SetActive(false);
         wave.SetActive(false);
         help.SetActive(false);
+        towerEdit.SetActive(false);
         panel.SetActive(true);
         mayTure = true;
     }
@@ -218,21 +220,26 @@ public class WizardTalk : MonoBehaviour
         {
             healthBook.SetActive(true);
         }
-        if (wizardSentences[curSentences] == wizardSentences[6])
+        if (wizardSentences[curSentences] == wizardSentences[5])
         {
-            manaBook.SetActive(true);
+            towerEdit.SetActive(true);
         }
         if (wizardSentences[curSentences] == wizardSentences[7])
         {
-            wave.SetActive(true);
+            manaBook.SetActive(true);
         }
         if (wizardSentences[curSentences] == wizardSentences[8])
         {
-            help.SetActive(true);
+            wave.SetActive(true);
         }
         if (wizardSentences[curSentences] == wizardSentences[9])
         {
+            help.SetActive(true);
+        }
+        if (wizardSentences[curSentences] == wizardSentences[10])
+        {
             panel.SetActive(false);
+            towerEdit.SetActive(false);
             Time.timeScale = 1;
             mayTure = false;
         }
