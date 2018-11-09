@@ -9,6 +9,7 @@ TagManager:
   - SoundManager
   - NoMana
   - InfoPanelShop
+  - UImanager
   layers:
   - Default
   - TransparentFX
