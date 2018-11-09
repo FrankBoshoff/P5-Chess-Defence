@@ -533,7 +533,7 @@ MonoBehaviour:
   sell: {fileID: 0}
   manager: {fileID: 0}
   lightMultiplier: 4
-  noManaText: {fileID: 0}
+  infoPanels: []
   Towers:
   - {fileID: 1006695015364860, guid: 598b92ecba7d4aa49b6a07a3a58b2a97, type: 2}
   - {fileID: 1536944733603152, guid: 5c8bb29c23c74dd49afae52758cccfdd, type: 2}
