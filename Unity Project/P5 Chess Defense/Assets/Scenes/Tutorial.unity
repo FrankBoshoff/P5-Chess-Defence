@@ -670,7 +670,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &25947996
 Transform:
   m_ObjectHideFlags: 0
@@ -19690,7 +19690,8 @@ MonoBehaviour:
   info: {fileID: 1419707673}
   infoClose: {fileID: 1650803206}
   infoScreen: {fileID: 691800965}
-  VictoryScreen: {fileID: 0}
+  VictoryScreen: {fileID: 25947995}
+  noManaText: {fileID: 0}
 --- !u!4 &1707844086
 Transform:
   m_ObjectHideFlags: 0
