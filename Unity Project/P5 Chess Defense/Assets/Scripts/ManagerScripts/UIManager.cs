@@ -33,6 +33,8 @@ public class UIManager : MonoBehaviour
     public Button info;
     public Button infoClose;
     public GameObject infoScreen;
+    public GameObject VictoryScreen;
+    int curSceneInt;
 
     // Use this for initialization
     void Start ()
@@ -50,7 +52,10 @@ public class UIManager : MonoBehaviour
         info.onClick.AddListener(ToggleInfo);
         infoClose.onClick.AddListener(ToggleInfo);
         UpdateEconomyUI(startCash);
+        VictoryScreen.SetActive(false);
         print("UIStart");
+        Scene currentScene = SceneManager.GetActiveScene();
+        curSceneInt = currentScene.buildIndex;
     }
 	
 	// Update is called once per frame
@@ -62,6 +67,7 @@ public class UIManager : MonoBehaviour
             pauseMenu.SetActive(true);
             Time.timeScale = 0;
         }
+        Victory();
 	}
 
     public void Continue()
@@ -113,6 +119,45 @@ public class UIManager : MonoBehaviour
     {
         gameOver.SetActive(true);
         Time.timeScale = 0;
+    }
+
+    public void Restard()
+    {
+        SceneManager.LoadScene(curSceneInt);
+    }
+    
+    public void ContinueButton()
+    {
+        if (curSceneInt == 2)
+        {
+            VictoryScreen.SetActive(false);
+            Time.timeScale = 1;
+        }
+        if (curSceneInt == 1)
+        {
+            VictoryScreen.SetActive(false);
+            SceneManager.LoadScene(2);
+        }
+    }
+
+    public void Victory()
+    {
+        Time.timeScale = 0;
+        Debug.Log("VICTORY SCREEN");
+        if (curSceneInt == 2)
+        {
+            if (waveNumber == 10)
+            {
+                VictoryScreen.SetActive(true);
+            }
+        }
+        if (curSceneInt == 3)
+        {
+            if (waveNumber == 8)
+            {
+                VictoryScreen.SetActive(true);
+            }
+        }
     }
 
     public void ToggleInfo()
