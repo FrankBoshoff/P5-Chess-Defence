@@ -6166,7 +6166,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "FireBall\ncost = X \nFire Speed: Medium\nRange: Medium\nSpecial: Explode
+  m_Text: "FireBall\ncost = 10 \nFire Speed: Medium\nRange: Medium\nSpecial: Explode
     on Impact"
 --- !u!222 &142551335
 CanvasRenderer:
@@ -9016,8 +9016,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Shockwave\ncost = X \nFire Speed: slow\nRange: long\nSpecial: Fires waves
-    every so often."
+  m_Text: 'Shockwave
+
+    cost = 25
+
+    Fire Speed: slow
+
+    Range: long
+
+    Special: Fires waves every so often.'
 --- !u!222 &331084929
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10097,7 +10104,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Cost: X'
+  m_Text: 'Cost: 5'
 --- !u!222 &429188563
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13031,7 +13038,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Cost: X'
+  m_Text: 'Cost: 10'
 --- !u!222 &745761739
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14525,7 +14532,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "MagicMissle\ncost = X \nFire Speed: High\nRange: Medium\nSpecial: None"
+  m_Text: 'MagicMissle
+
+    cost = 5
+
+    Fire Speed: High
+
+    Range: Medium
+
+    Special: None'
 --- !u!222 &960369053
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16279,7 +16294,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Frost\ncost = X \nFire Speed: Constant\nRange: Medium\nSpecial: Slow Field"
+  m_Text: 'Frost
+
+    cost = 15
+
+    Fire Speed: Constant
+
+    Range: Medium
+
+    Special: Slow Field'
 --- !u!222 &1125458656
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16354,7 +16377,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Cost: X'
+  m_Text: 'Cost: 15'
 --- !u!222 &1127081465
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22493,7 +22516,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Cost: X'
+  m_Text: 'Cost: 15'
 --- !u!222 &1713910623
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24068,7 +24091,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Cost: X'
+  m_Text: 'Cost: 25'
 --- !u!222 &1849883953
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25736,8 +25759,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Poison Dart\ncost = X \nFire Speed: slow\nRange: Medium\nSpecial: Applies
-    damage overtime"
+  m_Text: 'Poison Dart
+
+    cost = 10
+
+    Fire Speed: slow
+
+    Range: Medium
+
+    Special: Applies damage overtime'
 --- !u!222 &2057941757
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -132,12 +132,12 @@ public class UIManager : MonoBehaviour
     
     public void ContinueButton()
     {
+        Time.timeScale = 1;
         if (curSceneInt == 2)
         {
             VictoryScreen.SetActive(false);
-            Time.timeScale = 1;
         }
-        if (curSceneInt == 1)
+        if (curSceneInt == 3)
         {
             VictoryScreen.SetActive(false);
             SceneManager.LoadScene(2);
@@ -156,7 +156,7 @@ public class UIManager : MonoBehaviour
         }
         if (curSceneInt == 3)
         {
-            if (waveNumber == 8)
+            if (waveNumber == 7)
             {
                 VictoryScreen.SetActive(true);
                 Time.timeScale = 0;
