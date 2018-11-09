@@ -13,20 +13,30 @@ public class TowerBuilder : MonoBehaviour
     private float rotation;
     private Vector3 v;
     private GameObject g;
+    public List<GameObject> infoPanels = new List<GameObject>();
 
-    public GameObject noManaText;
     //public AudioSource buildSource;
     //public AudioClip build;
 
     public List<GameObject> Towers = new List<GameObject>();
 
     // Use this for initialization
+    private void Awake()
+    {
+        foreach (GameObject g in GameObject.FindGameObjectsWithTag("InfoPanelShop"))
+        {
+            infoPanels.Add(g);
+        }
+    }
+
     void Start () {
         rotation = Random.Range(0, 360);
         v.y = rotation;
         transform.eulerAngles = v;
-        noManaText = GameObject.FindWithTag("NoMana");
-        noManaText.SetActive(false);
+        foreach(GameObject g in infoPanels)
+        {
+            g.SetActive(false);
+        }
 	}
 	
 	// Update is called once per frame
@@ -70,20 +80,17 @@ public class TowerBuilder : MonoBehaviour
             g.GetComponent<TowerBase>().sellMenu = sell;
             g.GetComponent<TowerBase>().buildPoint = gameObject;
             gameObject.SetActive(false);
+            foreach(GameObject g in infoPanels)
+            {
+                g.SetActive(false);
+            }
             CloseShop();
         }
         else
         {
             print("not enough cash");
-            noManaText.SetActive(true);
-            StartCoroutine(NoManaReset());
+            manager.GetComponent<UIManager>().NoMana();
         }
-    }
-
-    IEnumerator NoManaReset()
-    {
-        yield return new WaitForSeconds(1.5f);
-        noManaText.SetActive(false);
     }
 
     public void CloseShop()

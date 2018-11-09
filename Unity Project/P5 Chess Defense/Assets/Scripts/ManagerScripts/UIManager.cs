@@ -36,6 +36,8 @@ public class UIManager : MonoBehaviour
     public GameObject VictoryScreen;
     int curSceneInt;
 
+    public GameObject noManaText;
+
     // Use this for initialization
     void Start ()
     {
@@ -52,10 +54,12 @@ public class UIManager : MonoBehaviour
         info.onClick.AddListener(ToggleInfo);
         infoClose.onClick.AddListener(ToggleInfo);
         UpdateEconomyUI(startCash);
-        VictoryScreen.SetActive(false);
+        noManaText = GameObject.FindWithTag("NoMana");
+        noManaText.SetActive(false);
         print("UIStart");
         Scene currentScene = SceneManager.GetActiveScene();
         curSceneInt = currentScene.buildIndex;
+        VictoryScreen.SetActive(false);
     }
 	
 	// Update is called once per frame
@@ -142,13 +146,12 @@ public class UIManager : MonoBehaviour
 
     public void Victory()
     {
-        Time.timeScale = 0;
-        Debug.Log("VICTORY SCREEN");
         if (curSceneInt == 2)
         {
             if (waveNumber == 10)
             {
                 VictoryScreen.SetActive(true);
+                Time.timeScale = 0;
             }
         }
         if (curSceneInt == 3)
@@ -156,6 +159,7 @@ public class UIManager : MonoBehaviour
             if (waveNumber == 8)
             {
                 VictoryScreen.SetActive(true);
+                Time.timeScale = 0;
             }
         }
     }
@@ -172,5 +176,17 @@ public class UIManager : MonoBehaviour
             infoScreen.SetActive(false);
             Time.timeScale = 1;
         }
+    }
+
+    IEnumerator NoManaReset()
+    {
+        yield return new WaitForSeconds(1.5f);
+        noManaText.SetActive(false);
+    }
+
+    public void NoMana()
+    {
+        noManaText.SetActive(true);
+        StartCoroutine(NoManaReset());
     }
 }
