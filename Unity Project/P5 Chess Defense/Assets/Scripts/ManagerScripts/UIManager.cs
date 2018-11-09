@@ -60,6 +60,11 @@ public class UIManager : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         curSceneInt = currentScene.buildIndex;
         VictoryScreen.SetActive(false);
+        if (curSceneInt == 2)
+        {
+            Time.timeScale = 1;
+            Debug.Log("GameScene");
+        }
     }
 	
 	// Update is called once per frame

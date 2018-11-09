@@ -24,15 +24,15 @@ public class TutorialLimiter : MonoBehaviour {
 
     public void UnlockShop(int i)
     {
-        if(i == 2)
+        if(i == 5)
         {
             shop1.SetActive(true);
         }
-        if (i == 4)
+        if (i == 2)
         {
             shop2.SetActive(true);
         }
-        if (i == 5)
+        if (i == 4)
         {
             shop3.SetActive(true);
         }

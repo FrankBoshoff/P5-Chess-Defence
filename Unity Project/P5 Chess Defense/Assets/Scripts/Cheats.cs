@@ -12,21 +12,26 @@ public class Cheats : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-        if (Input.GetKeyDown("Comma") && Time.timeScale != 0)
+	void Update ()
+    {
+        if (Input.GetKeyDown(KeyCode.Comma) && Time.timeScale != 0)
         {
+            Debug.Log("01");
             Time.timeScale = 0.5f;
         }
-        if (Input.GetKeyDown("Period") && Time.timeScale != 0)
+        if (Input.GetKeyDown(KeyCode.Period) && Time.timeScale != 0)
         {
+            Debug.Log("02");
             Time.timeScale = 2;
         }
-        if (Input.GetKeyDown("Slash") && Time.timeScale != 0)
+        if (Input.GetKeyDown(KeyCode.Slash) && Time.timeScale != 0)
         {
+            Debug.Log("03");
             Time.timeScale = 1;
         }
-        if (Input.GetKeyDown("Semicolon") && Time.timeScale != 0)
+        if (Input.GetKey(KeyCode.Semicolon) && Time.timeScale != 0)
         {
+            Debug.Log("04");
             manager.GetComponent<UIManager>().UpdateEconomyUI(5);
         }
     }
