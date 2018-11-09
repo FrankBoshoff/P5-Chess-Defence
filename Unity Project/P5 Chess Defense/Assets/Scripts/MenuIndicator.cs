@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class MenuIndicator : MonoBehaviour {
 
     public Transform gems;
-    public List<Button> buttons = new List<Button>();
 
     public void ShowGem(RectTransform r)
     {

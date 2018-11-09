@@ -10,6 +10,7 @@ public class Spawner : MonoBehaviour
     public GameObject manager;
     public GameObject ui;
     public Vector3 spawnOfset;
+    public float zStartPos;
     Vector3 startPos;
 
     public GameObject rEnemy;
@@ -23,7 +24,8 @@ public class Spawner : MonoBehaviour
 
     void Update()
     {
-        spawnOfset.x = Random.Range(-1, 2);
+        spawnOfset.x = Random.Range(10, 14);
+        spawnOfset.z = zStartPos;
         if (maySpawn == true)
         {
             maySpawn = false;
@@ -45,7 +47,7 @@ public class Spawner : MonoBehaviour
     {
         yield return new WaitForSeconds(spawntime);
 
-        e = Instantiate(rEnemy, transform.position += spawnOfset, Quaternion.identity);
+        e = Instantiate(rEnemy, transform.position = spawnOfset, Quaternion.identity);
         e.GetComponent<EnemyBase>().wave = manager;
         e.GetComponent<EnemyBase>().ui = ui;
         manager.GetComponent<WaveManager>().toSpawn -= 1;
